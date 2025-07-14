@@ -23,7 +23,7 @@ except ImportError as e:
 
 app = Flask(__name__)
 app = Flask(__name__, static_folder='static', static_url_path='/static')
-app.secret_key = 'boardgame-ark-secret-key-2024'  # 在生产环境中使用环境变量
+app.secret_key = os.environ.get('SECRET_KEY', 'boardgame-ark-secret-key-2024')
 
 # 数据库配置
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///boardgame_recommendations.db'
@@ -846,21 +846,37 @@ def internal_error(error):
     return jsonify({'error': '服务器内部错误'}), 500
 
 
-if __name__ == '__main__':
+# 初始化应用（用于部署平台）
+def initialize_app():
+    """初始化应用和数据"""
     print("=" * 50)
     print("桌游方舟推荐系统启动中...")
     print(f"增强推荐系统: {'可用' if HAS_ENHANCED_SYSTEM else '不可用'}")
-    print(f"数据加载状态: {'成功' if data_loaded else '失败'}")
     print("=" * 50)
-
+    
+    # 初始化数据库
+    init_db()
+    
+    # 加载数据
+    data_loaded = load_data()
+    print(f"数据加载状态: {'成功' if data_loaded else '失败'}")
+    
     if data_loaded:
-        print("✅ 系统启动成功！")
-        print("📱 访问地址: http://localhost:8080")
+        print("✅ 系统初始化成功！")
     else:
         print("⚠️  系统启动但数据未加载")
         print("🔧 请检查：")
         print("   1. BGG_Data.csv 文件是否存在")
         print("   2. enhanced_recommendation.py 文件是否存在")
         print("   3. 依赖包是否正确安装")
+    
+    return app
 
+# 为部署环境初始化应用
+if os.environ.get('FLASK_ENV') != 'development':
+    initialize_app()
+
+if __name__ == '__main__':
+    # 仅在本地开发时运行
+    initialize_app()
     app.run(debug=True, host='0.0.0.0', port=8080)
