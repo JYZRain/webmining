@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌游方舟 | 专属推荐</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 语言切换功能 -->
+    <link rel="stylesheet" href="/static/css/language-toggle.css">
+    <script src="/static/js/language.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #8a6a4f;
+            --accent-color: #c73e3a;
+            --bg-color: #f0e8d9;
+            --card-bg: #fdfaf2;
+            --text-dark: #4a3f35;
+            --text-light: #7a6a5a;
+            --border-color: #dcd0c0;
+            --success-color: #4caf50;
+            --gold-color: #ffd700;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #e8dcc6 100%);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9em;
+        }
+
+        .user-info a:hover {
+            opacity: 0.8;
+        }
+
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .user-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            color: white;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(138, 106, 79, 0.3);
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* 主内容区域 */
+        .main-content {
+            margin-top: 80px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 游戏网格 */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .game-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover .game-image img {
+            transform: scale(1.05);
+        }
+
+        .rating-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--gold-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .placeholder-icon {
+            color: white;
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .game-info {
+            padding: 1.5rem;
+        }
+
+        .game-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            min-height: 2.6rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .game-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .game-title a:hover {
+            color: var(--accent-color);
+        }
+
+        .game-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .match-score {
+            background: linear-gradient(90deg, var(--success-color), #66bb6a);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        /* 次要板块 */
+        .secondary-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .secondary-section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .secondary-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .compact-game-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .compact-game-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .compact-game-item:hover {
+            background: #f8f5f0;
+            transform: translateX(5px);
+        }
+
+        .compact-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            flex-shrink: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .compact-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .compact-image .placeholder-icon {
+            font-size: 1.5rem;
+        }
+
+        .compact-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .compact-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .compact-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .compact-title a:hover {
+            color: var(--accent-color);
+        }
+
+        .compact-details {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .more-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(138, 106, 79, 0.3);
+        }
+
+        /* 特殊效果 */
+        .sparkle {
+            position: absolute;
+            color: var(--gold-color);
+            animation: sparkle 2s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        /* 加载状态 */
+        .loading-message {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 85vh;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .modal-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            max-height: calc(85vh - 120px);
+            overflow-y: auto;
+        }
+
+        .modal-games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* 收藏通知 */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--success-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: none;
+            align-items: center;
+            gap: 1rem;
+            z-index: 3000;
+            animation: slideInRight 0.3s ease;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        .toast.show {
+            display: flex;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .secondary-sections {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-actions {
+                gap: 0.5rem;
+            }
+
+            .btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 2% auto;
+            }
+
+            .modal-games-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-dice-d20"></i> <span data-i18n="nav.logo">桌游方舟</span>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="window.location.href='/wizard'">
+                    <i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span>
+                </button>
+                <button class="btn btn-outline" onclick="window.location.href='/saved'">
+                    <i class="fas fa-list"></i> <span data-i18n="nav.my_collection">我的收藏</span>
+                </button>
+                <button class="btn btn-outline" onclick="newSearch()">
+                    <i class="fas fa-redo"></i> <span data-i18n="nav.new_recommendation">重新推荐</span>
+                </button>
+                <button class="btn btn-outline" onclick="saveResults()">
+                    <i class="fas fa-bookmark"></i> <span data-i18n="nav.save_results">收藏结果</span>
+                </button>
+                <div id="user-section">
+                    <!-- 用户信息将通过JavaScript动态加载 -->
+                    <a href="/login" class="login-btn">登录</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <!-- 猜你喜欢主板块 -->
+        <section class="hero-section">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-sparkles sparkle" style="top: -10px; left: 20px;"></i>
+                    <span data-i18n="rec.main_title">猜你喜欢</span>
+                    <i class="fas fa-sparkles sparkle" style="top: 10px; right: 30px; animation-delay: 1s;"></i>
+                </h1>
+                <p class="section-subtitle" data-i18n="rec.main_subtitle">
+                    基于你的偏好精心挑选，这些桌游最符合你的口味
+                </p>
+            </div>
+
+            <div class="games-grid" id="main-recommendations">
+                <div class="loading-message" data-i18n="rec.loading">正在加载推荐结果...</div>
+            </div>
+        </section>
+
+        <!-- 次要推荐板块 -->
+        <div class="secondary-sections">
+            <!-- 高评分游戏 -->
+            <section class="secondary-section">
+                <h2 class="secondary-title">
+                    <i class="fas fa-crown" style="color: var(--gold-color);"></i>
+                    <span data-i18n="rec.top_rated_title">高分精选</span>
+                </h2>
+                <div class="compact-game-list" id="top-rated-games">
+                    <div class="loading-message" data-i18n="rec.loading">正在加载...</div>
+                </div>
+                <button class="more-btn" onclick="showMore('rating')">
+                    <i class="fas fa-chevron-right"></i> <span data-i18n="rec.view_more_top">查看更多高分游戏</span>
+                </button>
+            </section>
+
+            <!-- 最新游戏 -->
+            <section class="secondary-section">
+                <h2 class="secondary-title">
+                    <i class="fas fa-clock" style="color: var(--accent-color);"></i>
+                    <span data-i18n="rec.newest_title">新品推荐</span>
+                </h2>
+                <div class="compact-game-list" id="newest-games">
+                    <div class="loading-message" data-i18n="rec.loading">正在加载...</div>
+                </div>
+                <button class="more-btn" onclick="showMore('newest')">
+                    <i class="fas fa-chevron-right"></i> <span data-i18n="rec.view_more_new">查看更多新品游戏</span>
+                </button>
+            </section>
+
+            <!-- 更多匹配 -->
+            <section class="secondary-section">
+                <h2 class="secondary-title">
+                    <i class="fas fa-search" style="color: var(--success-color);"></i>
+                    <span data-i18n="rec.more_matches_title">更多匹配</span>
+                </h2>
+                <div class="compact-game-list" id="more-matches">
+                    <div class="loading-message" data-i18n="rec.loading">正在加载...</div>
+                </div>
+                <button class="more-btn" onclick="showMore('matches')">
+                    <i class="fas fa-chevron-right"></i> <span data-i18n="rec.view_more_matches">查看所有匹配游戏</span>
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="moreGamesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">
+                    <i class="fas fa-gamepad"></i>
+                    <span data-i18n="rec.modal.more_games">更多游戏</span>
+                </h2>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-games-grid" id="modalGamesGrid">
+                    <!-- 动态加载内容 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通知提示 -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">操作成功！</span>
+    </div>
+
+    <script>
+        // 用户认证状态检查
+        async function checkUserAuth() {
+            try {
+                const response = await fetch('/api/user/info');
+                if (response.ok) {
+                    const user = await response.json();
+                    displayUserInfo(user);
+                } else {
+                    displayLoginButton();
+                }
+            } catch (error) {
+                displayLoginButton();
+            }
+        }
+
+        function displayUserInfo(user) {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <div class="user-info">
+                    <a href="/profile" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <div class="user-avatar">${user.username[0].toUpperCase()}</div>
+                        <span>${user.username}</span>
+                    </a>
+                    <a href="/logout" style="margin-left: 15px; color: var(--text-light); text-decoration: none;"><span data-i18n="nav.logout">登出</span></a>
+                </div>
+            `;
+            // 重新应用语言翻译
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        function displayLoginButton() {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <a href="/login" class="login-btn">登录</a>
+            `;
+        }
+
+        // === 优化后的图片加载管理器 ===
+        class ImageLoader {
+            constructor() {
+                this.imageCache = new Map();
+                this.loadingQueue = new Set();
+                this.observer = null;
+                this.setupIntersectionObserver();
+            }
+
+            setupIntersectionObserver() {
+                if ('IntersectionObserver' in window) {
+                    this.observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                const gameId = parseInt(element.dataset.gameId);
+                                const imgElement = element.querySelector('img');
+                                if (gameId && imgElement && !imgElement.src) {
+                                    this.loadGameImage(gameId, imgElement);
+                                }
+                            }
+                        });
+                    }, {
+                        rootMargin: '50px'
+                    });
+                }
+            }
+
+            observeElement(element) {
+                if (this.observer && element) {
+                    this.observer.observe(element);
+                }
+            }
+
+            async loadGameImage(gameId, imgElement) {
+                if (!gameId || !imgElement || this.loadingQueue.has(gameId)) return;
+
+                if (this.imageCache.has(gameId)) {
+                    const cachedUrl = this.imageCache.get(gameId);
+                    if (cachedUrl) {
+                        this.setImageUrl(imgElement, cachedUrl);
+                    }
+                    return;
+                }
+
+                this.loadingQueue.add(gameId);
+
+                try {
+                    const response = await fetch(`/api/game-image/${gameId}`);
+                    const data = await response.json();
+
+                    if (data.image_url) {
+                        this.imageCache.set(gameId, data.image_url);
+                        this.setImageUrl(imgElement, data.image_url);
+                    } else {
+                        this.imageCache.set(gameId, null);
+                    }
+                } catch (error) {
+                    console.warn(`加载游戏 ${gameId} 图片失败:`, error);
+                    this.imageCache.set(gameId, null);
+                } finally {
+                    this.loadingQueue.delete(gameId);
+                }
+            }
+
+            setImageUrl(imgElement, imageUrl) {
+                if (imgElement && imageUrl) {
+                    const img = new Image();
+                    img.onload = () => {
+                        imgElement.src = imageUrl;
+                        imgElement.style.display = 'block';
+
+                        const placeholder = imgElement.parentElement.querySelector('.placeholder-icon');
+                        if (placeholder) {
+                            placeholder.style.display = 'none';
+                        }
+
+                        imgElement.style.opacity = '0';
+                        imgElement.style.transition = 'opacity 0.4s ease';
+                        setTimeout(() => {
+                            imgElement.style.opacity = '1';
+                        }, 50);
+                    };
+                    img.onerror = () => {
+                        console.warn('图片加载失败:', imageUrl);
+                    };
+                    img.src = imageUrl;
+                }
+            }
+        }
+
+        const imageLoader = new ImageLoader();
+
+        // 全局数据存储
+        let allRecommendations = {
+            main: [],
+            topRated: [],
+            newest: [],
+            moreMatches: []
+        };
+
+        // 示例数据
+        const sampleRecommendations = [
+            { id: 167791, name: "Terraforming Mars", rating: 8.43, year: 2016, match_score: 95 },
+            { id: 120677, name: "Terra Mystica", rating: 8.14, year: 2012, match_score: 92 },
+            { id: 31260, name: "Agricola", rating: 7.94, year: 2007, match_score: 90 },
+            { id: 178900, name: "Codenames", rating: 7.62, year: 2015, match_score: 88 },
+            { id: 169786, name: "Scythe", rating: 8.24, year: 2016, match_score: 87 },
+            { id: 161936, name: "Pandemic Legacy: Season 1", rating: 8.61, year: 2015, match_score: 85 }
+        ];
+
+        const topRatedGames = [
+            { id: 174430, name: "Gloomhaven", rating: 8.79, year: 2017 },
+            { id: 220308, name: "Brass: Birmingham", rating: 8.66, year: 2018 },
+            { id: 161936, name: "Pandemic Legacy: Season 1", rating: 8.61, year: 2015 },
+            { id: 167791, name: "Terraforming Mars", rating: 8.43, year: 2016 }
+        ];
+
+        const newestGames = [
+            { id: 295947, name: "Dune: Imperium", rating: 8.35, year: 2020 },
+            { id: 266192, name: "Wingspan", rating: 8.11, year: 2019 },
+            { id: 316554, name: "Everdell", rating: 8.22, year: 2021 },
+            { id: 295770, name: "Root", rating: 8.05, year: 2018 }
+        ];
+
+        // 生成游戏卡片HTML
+        function generateGameCard(game, isMain = true) {
+            const bggUrl = `https://boardgamegeek.com/boardgame/${game.id}`;
+            const matchText = window.langManager && window.langManager.getCurrentLang() === 'en'
+                ? `${game.match_score}% match`
+                : `${game.match_score}% ${window.langManager ? window.langManager.t('rec.match_score') : '匹配'}`;
+
+            if (isMain) {
+                return `
+                    <div class="game-card" data-game-id="${game.id}" onclick="openBGGLink(${game.id})">
+                        <div class="game-image">
+                            <img style="width: 100%; height: 100%; object-fit: cover; display: none;" alt="${game.name}" />
+                            <div class="placeholder-icon">🎲</div>
+                            <div class="rating-badge">
+                                <i class="fas fa-star"></i>
+                                ${game.rating ? game.rating.toFixed(2) : 'N/A'}
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">
+                                <a href="${bggUrl}" target="_blank" onclick="event.stopPropagation()">
+                                    ${game.name}
+                                </a>
+                            </h3>
+                            <div class="game-meta">
+                                <span>${game.year || 'N/A'}</span>
+                                ${game.match_score ? `<span class="match-score">${matchText}</span>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                return `
+                    <div class="compact-game-item" data-game-id="${game.id}" onclick="openBGGLink(${game.id})">
+                        <div class="compact-image">
+                            <img style="width: 100%; height: 100%; object-fit: cover; display: none;" alt="${game.name}" />
+                            <div class="placeholder-icon">🎮</div>
+                        </div>
+                        <div class="compact-info">
+                            <div class="compact-title">
+                                <a href="${bggUrl}" target="_blank" onclick="event.stopPropagation()">
+                                    ${game.name}
+                                </a>
+                            </div>
+                            <div class="compact-details">
+                                <span>${game.year || 'N/A'}</span>
+                                <span><i class="fas fa-star"></i> ${game.rating ? game.rating.toFixed(2) : 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // 渲染主推荐
+        function renderMainRecommendations(games) {
+            const container = document.getElementById('main-recommendations');
+            if (!games || games.length === 0) {
+                container.innerHTML = `<div class="loading-message" data-i18n="rec.no_results">${window.langManager ? window.langManager.t('rec.no_results') : '暂无推荐结果'}</div>`;
+                return;
+            }
+
+            container.innerHTML = games.map(game => generateGameCard(game, true)).join('');
+
+            container.querySelectorAll('.game-card').forEach(card => {
+                imageLoader.observeElement(card);
+            });
+        }
+
+        // 渲染次要板块
+        function renderSecondarySection(containerId, games) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            if (!games || games.length === 0) {
+                container.innerHTML = `<div class="loading-message" data-i18n="rec.no_data">${window.langManager ? window.langManager.t('rec.no_data') : '暂无数据'}</div>`;
+                return;
+            }
+
+            container.innerHTML = games.slice(0, 4).map(game => generateGameCard(game, false)).join('');
+
+            container.querySelectorAll('.compact-game-item').forEach(item => {
+                imageLoader.observeElement(item);
+            });
+        }
+
+        // 显示更多游戏
+        async function showMore(type) {
+            const modal = document.getElementById('moreGamesModal');
+            const modalTitle = document.getElementById('modalTitle').querySelector('span');
+            const modalGrid = document.getElementById('modalGamesGrid');
+
+            let games = [];
+            let title = '';
+            let icon = '';
+
+            const lang = window.langManager ? window.langManager.getCurrentLang() : 'zh';
+
+            switch(type) {
+                case 'rating':
+                    games = await fetchMoreGames('rating');
+                    title = window.langManager ? window.langManager.t('rec.modal.top_games') : '更多高分游戏';
+                    icon = '<i class="fas fa-crown" style="color: var(--gold-color);"></i>';
+                    break;
+                case 'newest':
+                    games = await fetchMoreGames('newest');
+                    title = window.langManager ? window.langManager.t('rec.modal.new_games') : '更多新品游戏';
+                    icon = '<i class="fas fa-clock" style="color: var(--accent-color);"></i>';
+                    break;
+                case 'matches':
+                    games = await fetchMoreGames('matches');
+                    title = window.langManager ? window.langManager.t('rec.modal.all_matches') : '所有匹配游戏';
+                    icon = '<i class="fas fa-search" style="color: var(--success-color);"></i>';
+                    break;
+            }
+
+            modalTitle.innerHTML = title;
+            modalTitle.parentElement.innerHTML = icon + modalTitle.outerHTML;
+            modalGrid.innerHTML = games.map(game => generateGameCard(game, true)).join('');
+
+            modalGrid.querySelectorAll('.game-card').forEach(card => {
+                imageLoader.observeElement(card);
+            });
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 获取更多游戏数据
+        async function fetchMoreGames(type) {
+            try {
+                const response = await fetch(`/api/games/more?type=${type}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    return data.games || [];
+                }
+            } catch (error) {
+                console.error('获取更多游戏失败:', error);
+            }
+
+            if (type === 'rating') {
+                return generateMoreGames('rating', 20);
+            } else if (type === 'newest') {
+                return generateMoreGames('newest', 20);
+            } else {
+                return generateMoreGames('matches', 20);
+            }
+        }
+
+        // 生成示例游戏数据
+        function generateMoreGames(type, count) {
+            const games = [];
+            const baseGames = type === 'rating' ? topRatedGames :
+                           type === 'newest' ? newestGames : sampleRecommendations;
+
+            for (let i = 0; i < count; i++) {
+                const baseGame = baseGames[i % baseGames.length];
+                games.push({
+                    ...baseGame,
+                    id: baseGame.id + i * 1000,
+                    name: `${baseGame.name} ${i > 3 ? `(${i + 1})` : ''}`,
+                    rating: baseGame.rating - (i * 0.02),
+                    match_score: type === 'matches' ? 85 - i : undefined
+                });
+            }
+
+            return games;
+        }
+
+        // 关闭模态框
+        function closeModal() {
+            const modal = document.getElementById('moreGamesModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // 点击模态框背景关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('moreGamesModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // 打开BGG链接
+        function openBGGLink(gameId) {
+            if (gameId) {
+                window.open(`https://boardgamegeek.com/boardgame/${gameId}`, '_blank');
+            }
+        }
+
+        // 显示通知
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+
+            // 如果传入的是翻译键，尝试获取翻译
+            let displayMessage = message;
+            if (window.langManager && message.includes('.')) {
+                const translated = window.langManager.t(message);
+                if (translated !== message) {
+                    displayMessage = translated;
+                }
+            }
+
+            toastMessage.textContent = displayMessage;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // 保存结果
+        async function saveResults() {
+            const defaultName = window.langManager ?
+                `${window.langManager.t('rec.save_default')}${new Date().toLocaleDateString()}` :
+                `推荐_${new Date().toLocaleDateString()}`;
+
+            const promptText = window.langManager ?
+                window.langManager.t('rec.save_prompt') :
+                '给这个推荐起个名字：';
+
+            const title = prompt(promptText, defaultName);
+
+            if (title === null) return;
+
+            const saveData = {
+                recommendations: allRecommendations,
+                preferences: JSON.parse(localStorage.getItem('lastPreferences') || '{}'),
+                title: title || defaultName
+            };
+
+            try {
+                const response = await fetch('/api/recommendations/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(saveData)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showToast('rec.toast.saved_cloud');
+
+                    const localSaved = JSON.parse(localStorage.getItem('savedRecommendations') || '[]');
+                    localSaved.unshift({
+                        ...saveData,
+                        id: result.id,
+                        savedAt: new Date().toISOString()
+                    });
+                    if (localSaved.length > 10) localSaved.pop();
+                    localStorage.setItem('savedRecommendations', JSON.stringify(localSaved));
+                } else {
+                    saveToLocalOnly(saveData);
+                }
+            } catch (error) {
+                console.error('保存失败:', error);
+                saveToLocalOnly(saveData);
+            }
+        }
+
+        function saveToLocalOnly(saveData) {
+            const localSaved = JSON.parse(localStorage.getItem('savedRecommendations') || '[]');
+            localSaved.unshift({
+                ...saveData,
+                savedAt: new Date().toISOString(),
+                localOnly: true
+            });
+            if (localSaved.length > 10) localSaved.pop();
+            localStorage.setItem('savedRecommendations', JSON.stringify(localSaved));
+            showToast('rec.toast.saved_local');
+        }
+
+        // 新搜索
+        function newSearch() {
+            const confirmText = window.langManager ?
+                window.langManager.t('rec.confirm_new_search') :
+                '确定要重新开始推荐吗？';
+
+            if (confirm(confirmText)) {
+                window.location.href = '/wizard';
+            }
+        }
+
+        // 从会话加载推荐结果
+        async function loadRecommendationsFromSession() {
+            try {
+                const response = await fetch('/api/recommendations/last');
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('从会话加载推荐数据:', data);
+
+                    if (data.main_recommendations && data.main_recommendations.length > 0) {
+                        allRecommendations.main = data.main_recommendations;
+                        allRecommendations.topRated = data.top_rated_games || [];
+                        allRecommendations.newest = data.newest_games || [];
+                        allRecommendations.moreMatches = data.more_matches || [];
+
+                        renderMainRecommendations(allRecommendations.main);
+                        renderSecondarySection('top-rated-games', allRecommendations.topRated);
+                        renderSecondarySection('newest-games', allRecommendations.newest);
+                        renderSecondarySection('more-matches', allRecommendations.moreMatches);
+
+                        if (data.preferences) {
+                            localStorage.setItem('lastPreferences', JSON.stringify(data.preferences));
+                        }
+
+                        return true;
+                    }
+                }
+            } catch (error) {
+                console.error('加载会话推荐数据失败:', error);
+            }
+            return false;
+        }
+
+        // 重新渲染所有内容（用于语言切换）
+        function rerenderAllContent() {
+            renderMainRecommendations(allRecommendations.main);
+            renderSecondarySection('top-rated-games', allRecommendations.topRated);
+            renderSecondarySection('newest-games', allRecommendations.newest);
+            renderSecondarySection('more-matches', allRecommendations.moreMatches);
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', async function() {
+            console.log('页面加载完成，开始初始化...');
+
+            // 检查用户认证状态
+            checkUserAuth();
+
+            // 监听语言变化，重新渲染内容
+            if (window.langManager) {
+                window.langManager.addObserver((newLang) => {
+                    rerenderAllContent();
+                });
+            }
+
+            const viewRecommendation = sessionStorage.getItem('viewRecommendation');
+            if (viewRecommendation) {
+                try {
+                    const savedData = JSON.parse(viewRecommendation);
+                    sessionStorage.removeItem('viewRecommendation');
+
+                    if (savedData.recommendations) {
+                        allRecommendations.main = savedData.recommendations.main || [];
+                        allRecommendations.topRated = savedData.recommendations.topRated || [];
+                        allRecommendations.newest = savedData.recommendations.newest || [];
+                        allRecommendations.moreMatches = savedData.recommendations.moreMatches || [];
+
+                        renderMainRecommendations(allRecommendations.main);
+                        renderSecondarySection('top-rated-games', allRecommendations.topRated);
+                        renderSecondarySection('newest-games', allRecommendations.newest);
+                        renderSecondarySection('more-matches', allRecommendations.moreMatches);
+
+                        showToast('rec.toast.viewing_saved');
+                        return;
+                    }
+                } catch (error) {
+                    console.error('加载保存的推荐失败:', error);
+                }
+            }
+
+            const hasSessionData = await loadRecommendationsFromSession();
+
+            if (!hasSessionData) {
+                console.log('使用示例数据');
+                allRecommendations.main = sampleRecommendations;
+                allRecommendations.topRated = topRatedGames;
+                allRecommendations.newest = newestGames;
+                allRecommendations.moreMatches = sampleRecommendations.slice(6);
+
+                renderMainRecommendations(allRecommendations.main);
+                renderSecondarySection('top-rated-games', allRecommendations.topRated);
+                renderSecondarySection('newest-games', allRecommendations.newest);
+                renderSecondarySection('more-matches', allRecommendations.moreMatches);
+            }
+
+            const sparkles = document.querySelectorAll('.sparkle');
+            sparkles.forEach((sparkle, index) => {
+                sparkle.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+    </script>
+</body>
+</html>

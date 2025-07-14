@@ -1,0 +1,924 @@
+2025-07-10 14:36:41,881 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:36:41,881 - RecommendationSystemLogger - INFO - 加载数据集和模型
+2025-07-10 14:36:41,956 - RecommendationSystemLogger - INFO - 数据集和模型加载完成
+2025-07-10 14:36:43,700 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:36:43,700 - RecommendationSystemLogger - INFO - 加载数据集和模型
+2025-07-10 14:36:43,778 - RecommendationSystemLogger - INFO - 数据集和模型加载完成
+2025-07-10 14:37:16,259 - RecommendationSystemLogger - INFO - 基于偏好的推荐成功
+2025-07-10 14:37:37,864 - RecommendationSystemLogger - INFO - 基于偏好的推荐成功
+2025-07-10 14:38:13,711 - RecommendationSystemLogger - INFO - 基于偏好的推荐成功
+2025-07-10 14:40:02,681 - RecommendationSystemLogger - INFO - 基于偏好的推荐成功
+2025-07-10 14:40:37,266 - RecommendationSystemLogger - INFO - 基于游戏 '"La Garde recule!"' 的推荐成功
+2025-07-10 14:40:44,551 - RecommendationSystemLogger - INFO - 基于游戏 '"La Garde recule!"' 的推荐成功
+2025-07-10 14:40:53,724 - RecommendationSystemLogger - INFO - 基于游戏 '"La Garde recule!"' 的推荐成功
+2025-07-10 14:41:02,522 - RecommendationSystemLogger - INFO - 基于游戏 '#MyLife' 的推荐成功
+2025-07-10 14:45:04,547 - RecommendationSystemLogger - INFO - 基于游戏 '"La Garde recule!"' 的推荐成功
+2025-07-10 14:50:01,023 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:50:01,023 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:50:01,099 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:50:01,100 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 14:50:03,001 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:50:03,001 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:50:03,076 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:50:03,077 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 14:56:49,566 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:56:49,566 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:56:49,646 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:56:49,647 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 14:56:51,551 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:56:51,551 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:56:51,626 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:56:51,627 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 14:57:22,400 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:57:22,400 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:57:22,503 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:57:22,506 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 14:57:24,579 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 14:57:24,579 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 14:57:24,668 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 14:57:24,669 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:01:33,675 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:01:33,675 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:01:33,748 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:01:33,749 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:01:35,659 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:01:35,659 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:01:35,732 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:01:35,733 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:05:56,030 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:05:56,030 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:05:56,116 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:05:56,117 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:05:57,953 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:05:57,953 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:05:58,034 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:05:58,035 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:06:06,050 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Party Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3}
+2025-07-10 15:06:06,050 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Party Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}
+2025-07-10 15:06:06,219 - RecommendationSystemLogger - INFO - 偏好推荐结果: 20068 个游戏
+2025-07-10 15:06:06,292 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 20068 个结果
+2025-07-10 15:06:25,340 - RecommendationSystemLogger - INFO - 收到推荐请求的游戏列表: ["10' to Kill"]
+2025-07-10 15:06:25,340 - RecommendationSystemLogger - INFO - 处理游戏推荐请求: ["10' to Kill"]
+2025-07-10 15:06:25,363 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 15191
+2025-07-10 15:06:32,299 - RecommendationSystemLogger - INFO - 收到推荐请求的游戏列表: ["10' to Kill"]
+2025-07-10 15:06:32,299 - RecommendationSystemLogger - INFO - 处理游戏推荐请求: ["10' to Kill"]
+2025-07-10 15:06:32,319 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 15191
+2025-07-10 15:06:44,246 - RecommendationSystemLogger - INFO - 收到推荐请求的游戏列表: ['12 Days']
+2025-07-10 15:06:44,246 - RecommendationSystemLogger - INFO - 处理游戏推荐请求: ['12 Days']
+2025-07-10 15:06:44,262 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 2723
+2025-07-10 15:06:59,259 - RecommendationSystemLogger - INFO - 收到推荐请求的游戏列表: ['1812: The Invasion of Canada', '11:59']
+2025-07-10 15:06:59,259 - RecommendationSystemLogger - INFO - 处理游戏推荐请求: ['1812: The Invasion of Canada', '11:59']
+2025-07-10 15:06:59,286 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 9551
+2025-07-10 15:07:02,080 - RecommendationSystemLogger - INFO - 收到推荐请求的游戏列表: ['1812: The Invasion of Canada', '11:59']
+2025-07-10 15:07:02,080 - RecommendationSystemLogger - INFO - 处理游戏推荐请求: ['1812: The Invasion of Canada', '11:59']
+2025-07-10 15:07:02,103 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 9551
+2025-07-10 15:07:15,969 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Family Games', 'Strategy Games', 'Wargames'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3}
+2025-07-10 15:07:15,969 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Family Games', 'Strategy Games', 'Wargames'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}
+2025-07-10 15:07:16,123 - RecommendationSystemLogger - INFO - 偏好推荐结果: 20068 个游戏
+2025-07-10 15:07:16,148 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 20068 个结果
+2025-07-10 15:23:50,849 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:23:50,849 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:23:50,928 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:23:50,930 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:23:52,747 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:23:52,748 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:23:52,836 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:23:52,838 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:24:01,591 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['"La Garde recule!"'], 排序: similarity, 数量: 100
+2025-07-10 15:24:01,615 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:24:01,618 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:24:24,911 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days'], 排序: rating, 数量: 100
+2025-07-10 15:24:24,941 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:24:24,942 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:24:44,532 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days'], 排序: similarity, 数量: 100
+2025-07-10 15:24:44,558 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:24:44,559 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:24:50,407 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days'], 排序: year, 数量: 100
+2025-07-10 15:24:50,437 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:24:50,438 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:25:12,288 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Advantage Token'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:25:12,288 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Advantage Token'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:25:12,304 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:25:12,306 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:25:21,437 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days'], 排序: year, 数量: 100
+2025-07-10 15:25:21,473 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:25:21,475 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:25:27,101 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Advantage Token'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:25:27,101 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Advantage Token'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:25:27,115 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:25:27,116 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:25:30,521 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days'], 排序: year, 数量: 100
+2025-07-10 15:25:30,550 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:25:30,551 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:25:36,754 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Advantage Token'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:25:36,754 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Advantage Token'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:25:36,769 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:25:36,770 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:25:48,435 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Advantage Token'], 'domains': ['Family Games', 'Party Games', 'Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:25:48,435 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Advantage Token'], 'selected_domains': ['Family Games', 'Party Games', 'Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:25:48,450 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:25:48,451 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:25:54,182 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Advantage Token'], 'domains': ['Family Games', 'Party Games', 'Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:25:54,182 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Advantage Token'], 'selected_domains': ['Family Games', 'Party Games', 'Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:25:54,199 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:25:54,200 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:26:37,050 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['13 Chefs'], 排序: similarity, 数量: 100
+2025-07-10 15:26:37,076 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:26:37,077 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:26:55,628 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['13 Chefs'], 排序: rating, 数量: 100
+2025-07-10 15:26:55,657 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:26:55,659 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:27:04,568 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['13 Chefs'], 排序: year, 数量: 100
+2025-07-10 15:27:04,598 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:27:04,599 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:27:12,539 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['13 Chefs'], 排序: year, 数量: 10
+2025-07-10 15:27:12,572 - RecommendationSystemLogger - INFO - 推荐结果: 10 个游戏
+2025-07-10 15:27:12,573 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 10 个结果
+2025-07-10 15:27:36,947 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['12 Days', '1825 Unit 3', 'AMC Reel Clues'], 排序: similarity, 数量: 100
+2025-07-10 15:27:36,988 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:27:36,989 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:28:26,026 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:28:26,026 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:28:26,042 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:28:26,043 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:28:45,280 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:28:45,280 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:28:45,296 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:28:45,299 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:28:49,682 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'year', 'limit': 100}
+2025-07-10 15:28:49,682 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: year, 数量: 100
+2025-07-10 15:28:49,701 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:28:49,703 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:28:52,326 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'year', 'limit': 10}
+2025-07-10 15:28:52,326 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games", 'Family Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: year, 数量: 10
+2025-07-10 15:28:52,343 - RecommendationSystemLogger - INFO - 偏好推荐结果: 10 个游戏
+2025-07-10 15:28:52,344 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 10 个结果
+2025-07-10 15:30:34,770 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'year', 'limit': 10}
+2025-07-10 15:30:34,770 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: year, 数量: 10
+2025-07-10 15:30:34,786 - RecommendationSystemLogger - INFO - 偏好推荐结果: 10 个游戏
+2025-07-10 15:30:34,788 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 10 个结果
+2025-07-10 15:30:39,031 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'year', 'limit': 10}
+2025-07-10 15:30:39,031 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: year, 数量: 10
+2025-07-10 15:30:39,047 - RecommendationSystemLogger - INFO - 偏好推荐结果: 10 个游戏
+2025-07-10 15:30:39,048 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 10 个结果
+2025-07-10 15:30:44,659 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 10}
+2025-07-10 15:30:44,659 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 10
+2025-07-10 15:30:44,671 - RecommendationSystemLogger - INFO - 偏好推荐结果: 10 个游戏
+2025-07-10 15:30:44,672 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 10 个结果
+2025-07-10 15:30:51,465 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:30:51,465 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:30:51,478 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:30:51,479 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:01,159 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:01,160 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:01,173 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:01,176 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:05,302 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 18, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:05,302 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 18, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:05,315 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:05,316 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:13,689 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 22, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:13,689 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 22, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:13,702 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:13,704 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:17,762 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:17,762 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:17,776 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:17,777 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:20,625 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:20,625 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:20,641 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:20,642 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:24,990 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:24,990 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:25,003 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:25,005 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:25,615 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:25,615 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:25,633 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:25,634 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:26,118 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:26,118 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:26,133 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:26,135 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:26,546 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:26,546 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:26,559 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:26,561 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:26,982 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 50, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:26,984 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 50, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:27,005 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:27,007 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:36,509 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:36,509 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:36,523 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:36,525 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:46,487 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 2, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:46,489 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 2, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:46,503 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:46,504 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:50,082 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 3, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:50,083 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 3, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:50,095 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:50,097 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:31:56,337 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 4, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:31:56,337 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 4, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:31:56,351 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:31:56,353 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:32:00,661 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 4, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:32:00,661 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 4, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:32:00,679 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:32:00,681 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:32:09,752 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:32:09,752 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:32:09,772 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:32:09,773 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:32:22,497 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 2, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:32:22,498 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 2, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:32:22,514 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:32:22,515 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:32:29,990 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 18, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:32:29,991 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 18, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:32:30,008 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:32:30,009 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:32:38,987 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:32:38,987 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: rating, 数量: 100
+2025-07-10 15:32:39,006 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:32:39,007 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:34:15,836 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 60, 'min_age': 1, 'complexity': 1, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:34:15,837 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: rating, 数量: 100
+2025-07-10 15:34:15,855 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:34:15,856 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:34:27,301 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 119, 'min_age': 1, 'complexity': 1, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:34:27,301 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 119, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: rating, 数量: 100
+2025-07-10 15:34:27,318 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:34:27,320 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:34:36,443 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ["Children's Games"], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:34:36,443 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: rating, 数量: 100
+2025-07-10 15:34:36,462 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:34:36,463 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:35:17,073 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Voting'], 'domains': ['Thematic Games'], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'rating', 'limit': 100}
+2025-07-10 15:35:17,073 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Voting'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: rating, 数量: 100
+2025-07-10 15:35:17,091 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:35:17,093 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:35:32,400 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Voting'], 'domains': ['Thematic Games'], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:35:32,401 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Voting'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 100
+2025-07-10 15:35:32,413 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:35:32,414 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:35:36,908 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Voting'], 'domains': ['Family Games'], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:35:36,908 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Voting'], 'selected_domains': ['Family Games'], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 100
+2025-07-10 15:35:36,921 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:35:36,922 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:35:39,810 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Voting'], 'domains': ['Wargames'], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:35:39,810 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Voting'], 'selected_domains': ['Wargames'], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 100
+2025-07-10 15:35:39,823 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:35:39,824 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:35:43,477 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Worker Placement with Dice Workers'], 'domains': ['Wargames'], 'min_players': 1, 'max_players': 1, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:35:43,477 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Worker Placement with Dice Workers'], 'selected_domains': ['Wargames'], 'preferred_min_players': 1, 'preferred_max_players': 1, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 100
+2025-07-10 15:35:43,489 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:35:43,491 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:50:10,721 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:50:10,721 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:50:10,794 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:50:10,795 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:50:12,758 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 15:50:12,758 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 15:50:12,851 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 15:50:12,852 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 15:50:25,913 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:50:25,913 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:50:25,928 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:50:25,931 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:50:41,136 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Days in Europe'], 排序: similarity, 数量: 100
+2025-07-10 15:50:41,163 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:50:41,165 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:52:09,286 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:52:09,286 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:52:09,301 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:52:09,302 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:52:20,070 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 18, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:52:20,070 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 18, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:52:20,084 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:52:20,085 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:52:30,219 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:52:30,219 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 15:52:30,232 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:52:30,233 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:52:36,226 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:52:36,226 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 15:52:36,243 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:52:36,244 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:53:13,577 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:53:13,577 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 100
+2025-07-10 15:53:13,591 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:53:13,593 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:53:17,594 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 15:53:17,594 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 15:53:17,608 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 15:53:17,609 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 15:53:20,896 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Days in Europe'], 排序: similarity, 数量: 100
+2025-07-10 15:53:20,923 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:53:20,924 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:53:31,354 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['13 Sheep'], 排序: similarity, 数量: 100
+2025-07-10 15:53:31,382 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:53:31,384 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:55:24,774 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['18 Holes'], 排序: similarity, 数量: 100
+2025-07-10 15:55:24,802 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:55:24,805 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 15:55:50,880 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['wefgwef'], 排序: similarity, 数量: 100
+2025-07-10 15:55:50,894 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 未找到任何匹配的游戏。可用游戏示例: Gloomhaven, Pandemic Legacy: Season 1, Brass: Birmingham, Terraforming Mars, Twilight Imperium: Fourth Edition, Gloomhaven: Jaws of the Lion, Through the Ages: A New Story of Civilization, Gaia Project, Star Wars: Rebellion, Twilight Struggle
+2025-07-10 15:56:08,912 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Days in Asia', '10 Days in the USA'], 排序: similarity, 数量: 100
+2025-07-10 15:56:08,946 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏
+2025-07-10 15:56:08,947 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 16:18:22,591 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 16:18:22,591 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 16:18:22,667 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 16:18:22,668 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 16:18:24,610 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 16:18:24,610 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 16:18:24,691 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 16:18:24,692 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 16:18:30,248 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:18:30,249 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 16:18:30,258 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:18:30,260 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:18:42,909 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:18:42,909 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:18:42,923 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:18:42,924 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:18:51,197 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:18:51,197 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:18:51,211 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:18:51,212 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:18:57,670 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:18:57,671 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:18:57,685 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:18:57,686 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:04,994 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 120, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:04,994 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 120, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:05,008 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:05,009 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:14,013 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 180, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:14,013 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 180, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:14,027 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:14,028 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:24,564 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:24,564 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:24,576 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:24,577 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:34,476 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 8, 'max_players': 4, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:34,476 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 8, 'preferred_max_players': 4, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:34,489 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:34,490 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:41,024 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 8, 'max_players': 12, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:41,025 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 8, 'preferred_max_players': 12, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:41,039 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:41,040 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:46,150 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 18, 'max_players': 12, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:46,150 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 18, 'preferred_max_players': 12, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:46,164 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:46,165 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:19:58,613 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Command Cards'], 'domains': ['Family Games'], 'min_players': 18, 'max_players': 12, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:19:58,614 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Command Cards'], 'selected_domains': ['Family Games'], 'preferred_min_players': 18, 'preferred_max_players': 12, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:19:58,626 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:19:58,627 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:20:03,970 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Command Cards'], 'domains': ['Customizable Games'], 'min_players': 18, 'max_players': 12, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:20:03,970 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Command Cards'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 18, 'preferred_max_players': 12, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:20:03,982 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:20:03,983 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:20:08,703 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Command Cards'], 'domains': ['Abstract Games'], 'min_players': 18, 'max_players': 12, 'play_time': 10, 'min_age': 18, 'complexity': 5, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:20:08,704 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Command Cards'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 18, 'preferred_max_players': 12, 'preferred_play_time': 10, 'preferred_min_age': 18, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 100
+2025-07-10 16:20:08,717 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:20:08,718 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:45:30,938 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 16:45:30,938 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 16:45:31,016 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 16:45:31,017 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 16:45:33,122 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 16:45:33,122 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 16:45:33,218 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 16:45:33,219 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 16:45:50,323 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Days in the Americas'], 排序: similarity, 数量: 100
+2025-07-10 16:45:50,338 - RecommendationSystemLogger - INFO - 推荐结果: 100 个游戏 (使用 cosine 相似度)
+2025-07-10 16:45:50,353 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 100 个结果
+2025-07-10 16:46:01,092 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Days in the Americas'], 排序: similarity, 数量: 100
+2025-07-10 16:46:01,100 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: setting an array element with a sequence.
+2025-07-10 16:46:14,631 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:46:14,631 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 16:46:14,647 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:46:14,647 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:46:19,556 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:46:19,556 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 16:46:19,572 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:46:19,572 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:46:25,305 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 16:46:25,305 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 16:46:25,317 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 16:46:25,319 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 16:58:41,253 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...and then, we held hands.', "100 Swords: The Gold King's Dungeon"], 排序: similarity, 数量: 50
+2025-07-10 16:58:41,271 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: setting an array element with a sequence.
+2025-07-10 17:13:28,992 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:13:28,992 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:13:29,071 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:13:29,072 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:13:31,007 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:13:31,008 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:13:31,095 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:13:31,097 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:13:39,621 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...and then, we held hands.'], 排序: similarity, 数量: 50
+2025-07-10 17:13:39,629 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: slice indices must be integers or None or have an __index__ method
+2025-07-10 17:13:52,776 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ["100 Swords: The Red Dragon's Dungeon"], 排序: similarity, 数量: 50
+2025-07-10 17:13:52,781 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: slice indices must be integers or None or have an __index__ method
+2025-07-10 17:14:58,181 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:14:58,182 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:14:58,258 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:14:58,259 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:15:00,089 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:15:00,089 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:15:00,165 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:15:00,167 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:15:06,008 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['007 James Bond: The Man with the Golden Gun'], 排序: similarity, 数量: 50
+2025-07-10 17:15:06,023 - RecommendationSystemLogger - INFO - 推荐结果: 50 个游戏 (使用 cosine 相似度)
+2025-07-10 17:15:06,025 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 50 个结果
+2025-07-10 17:15:13,520 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['007 James Bond: The Man with the Golden Gun'], 排序: similarity, 数量: 50
+2025-07-10 17:15:13,525 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: setting an array element with a sequence.
+2025-07-10 17:15:22,085 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:22,085 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:22,093 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:22,093 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:28,501 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:28,501 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:28,509 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:28,509 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:32,773 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:32,773 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:32,783 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:32,783 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:35,441 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:35,441 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:35,449 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:35,450 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:39,469 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ["Children's Games"], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:39,469 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:39,476 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:39,476 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:45,233 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ["Children's Games"], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 1, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:45,233 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 1, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:45,240 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:45,241 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:15:50,311 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ["Children's Games"], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 18, 'complexity': 3, 'sort_by': 'similarity', 'limit': 100}
+2025-07-10 17:15:50,311 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 18, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 100
+2025-07-10 17:15:50,317 - RecommendationSystemLogger - INFO - 偏好推荐结果: 100 个游戏
+2025-07-10 17:15:50,317 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 100 个结果
+2025-07-10 17:46:05,187 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:46:05,187 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:46:05,262 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:46:05,264 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:46:07,130 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:46:07,130 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:46:07,208 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:46:07,209 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:55:52,692 - RecommendationSystemLogger - ERROR - 404错误: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-10 17:56:25,292 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:56:25,292 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:56:25,373 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:56:25,374 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 17:56:27,384 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 17:56:27,384 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 17:56:27,460 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 17:56:27,461 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 18:06:32,882 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 18:06:32,882 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 18:06:32,967 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 18:06:32,969 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 18:06:34,931 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 18:06:34,931 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 18:06:35,006 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 18:06:35,008 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 18:07:03,716 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!'], 排序: similarity, 数量: 24
+2025-07-10 18:07:03,743 - RecommendationSystemLogger - INFO - 推荐结果: 24 个游戏
+2025-07-10 18:07:03,746 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 24 个结果
+2025-07-10 18:07:21,058 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-10 18:07:21,058 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-10 18:07:21,072 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-10 18:07:21,074 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-10 18:07:31,923 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 12}
+2025-07-10 18:07:31,923 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 12
+2025-07-10 18:07:31,940 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-10 18:07:31,941 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-10 18:07:36,286 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:07:36,286 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:07:36,302 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:07:36,304 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 18:08:20,653 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:08:20,654 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:08:20,671 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:08:20,672 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 18:08:25,102 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:08:25,102 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:08:25,121 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:08:25,122 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 18:08:26,500 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:08:26,500 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:08:26,517 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:08:26,519 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 18:08:28,746 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:08:28,746 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:08:28,763 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:08:28,766 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 18:08:34,999 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'domains': ['Thematic Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 18:08:35,000 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Drafting', 'Action Points', 'Action Queue'], 'selected_domains': ['Thematic Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: rating, 数量: 48
+2025-07-10 18:08:35,020 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 18:08:35,021 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 20:49:19,569 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 20:49:19,569 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 20:49:19,664 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 20:49:19,665 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 20:49:21,802 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 20:49:21,802 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 20:49:21,895 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 20:49:21,897 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 20:49:26,174 - RecommendationSystemLogger - ERROR - 404错误: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-10 20:49:46,024 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Points', 'Action Queue'], 'domains': ['Party Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3.6, 'sort_by': 'rating', 'limit': 12}
+2025-07-10 20:49:46,024 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Points', 'Action Queue'], 'selected_domains': ['Party Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.6}, 排序: rating, 数量: 12
+2025-07-10 20:49:46,042 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-10 20:49:46,044 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-10 20:49:55,689 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting', 'Action Points', 'Action Queue'], 'domains': ['Party Games', 'Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3.6, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 20:49:55,689 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting', 'Action Points', 'Action Queue'], 'selected_domains': ['Party Games', 'Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.6}, 排序: similarity, 数量: 48
+2025-07-10 20:49:55,704 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 20:49:55,704 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 20:51:47,311 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Mad Gab Card Game', '13 Minutes: The Cuban Missile Crisis, 1962', '18NY'], 排序: similarity, 数量: 48
+2025-07-10 20:51:47,354 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:51:47,355 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:51:53,347 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Mad Gab Card Game', '13 Minutes: The Cuban Missile Crisis, 1962', '18NY'], 排序: rating, 数量: 48
+2025-07-10 20:51:53,395 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:51:53,397 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:51:59,692 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Mad Gab Card Game', '13 Minutes: The Cuban Missile Crisis, 1962', '18NY'], 排序: year, 数量: 48
+2025-07-10 20:51:59,734 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:51:59,735 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:52:10,464 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Mad Gab Card Game', '13 Minutes: The Cuban Missile Crisis, 1962', '18NY'], 排序: similarity, 数量: 48
+2025-07-10 20:52:10,503 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:52:10,504 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:53:39,957 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 20:53:39,957 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 20:53:40,053 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 20:53:40,055 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 20:53:42,188 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 20:53:42,188 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 20:53:42,282 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 20:53:42,283 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 20:54:10,401 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['1843'], 排序: similarity, 数量: 48
+2025-07-10 20:54:10,426 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:54:10,429 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:54:48,731 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['1000 and One Treasures', '18MEX', '51st State: Master Set'], 排序: similarity, 数量: 48
+2025-07-10 20:54:48,772 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 20:54:48,773 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 20:55:28,961 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Turn Order Until Pass'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 20:55:28,961 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Turn Order Until Pass'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 20:55:28,976 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 20:55:28,977 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 20:55:36,177 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Turn Order Until Pass'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 1, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 20:55:36,179 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Turn Order Until Pass'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 48
+2025-07-10 20:55:36,191 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 20:55:36,192 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 20:55:43,719 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Turn Order Until Pass'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 1, 'sort_by': 'rating', 'limit': 48}
+2025-07-10 20:55:43,719 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Turn Order Until Pass'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 1.0}, 排序: rating, 数量: 48
+2025-07-10 20:55:43,735 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 20:55:43,736 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 20:56:57,149 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Turn Order Until Pass'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 1, 'sort_by': 'year', 'limit': 48}
+2025-07-10 20:56:57,149 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Turn Order Until Pass'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 1.0}, 排序: year, 数量: 48
+2025-07-10 20:56:57,166 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 20:56:57,167 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:25:03,868 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 21:25:03,868 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 21:25:03,960 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 21:25:03,960 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 21:25:40,698 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 21:25:40,698 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 21:25:40,790 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 21:25:40,791 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 21:37:02,623 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 21:37:02,624 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 21:37:02,722 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 21:37:02,724 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 21:37:04,880 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-10 21:37:04,881 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-10 21:37:04,979 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-10 21:37:04,981 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-10 21:37:20,120 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['卡坦岛'], 排序: similarity, 数量: 12
+2025-07-10 21:37:20,134 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: 未找到任何匹配的游戏。可用游戏示例: Gloomhaven, Pandemic Legacy: Season 1, Brass: Birmingham, Terraforming Mars, Twilight Imperium: Fourth Edition, Gloomhaven: Jaws of the Lion, Through the Ages: A New Story of Civilization, Gaia Project, Star Wars: Rebellion, Twilight Struggle
+2025-07-10 21:37:50,556 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 12
+2025-07-10 21:37:51,560 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-10 21:37:51,565 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-10 21:38:07,786 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 48
+2025-07-10 21:38:08,932 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:38:08,935 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:38:15,211 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 12
+2025-07-10 21:38:16,371 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-10 21:38:16,374 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-10 21:38:19,310 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 48
+2025-07-10 21:38:20,461 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:38:20,463 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:38:31,527 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: rating, 数量: 48
+2025-07-10 21:38:32,677 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:38:32,679 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:38:40,044 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: year, 数量: 48
+2025-07-10 21:38:41,185 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:38:41,187 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:38:47,174 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 48
+2025-07-10 21:38:48,278 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:38:48,280 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:38:54,468 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-10 21:38:54,468 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-10 21:38:54,483 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-10 21:38:54,484 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-10 21:39:01,574 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 12}
+2025-07-10 21:39:01,574 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 12
+2025-07-10 21:39:01,587 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-10 21:39:01,588 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-10 21:39:12,925 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:39:12,925 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 21:39:12,937 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:39:12,941 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:39:35,257 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!', '007 James Bond: Live and Let Die', '#MyLife'], 排序: similarity, 数量: 12
+2025-07-10 21:39:36,381 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-10 21:39:36,384 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-10 21:39:46,151 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!', '007 James Bond: Live and Let Die', '#MyLife'], 排序: similarity, 数量: 48
+2025-07-10 21:39:47,253 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:39:47,256 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:39:52,508 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!', '007 James Bond: Live and Let Die', '#MyLife'], 排序: rating, 数量: 48
+2025-07-10 21:39:53,661 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:39:53,663 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:39:59,224 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!', '007 James Bond: Live and Let Die', '#MyLife'], 排序: year, 数量: 48
+2025-07-10 21:40:00,278 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:40:00,279 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:40:26,344 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'domains': ['Party Games', 'Strategy Games', 'Thematic Games', 'Wargames'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:40:26,344 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting', 'Action Points', 'Action Queue', 'Action Retrieval'], 'selected_domains': ['Party Games', 'Strategy Games', 'Thematic Games', 'Wargames'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 21:40:26,357 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:40:26,358 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:40:38,717 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Enclosure'], 'domains': ['Strategy Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:40:38,717 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Enclosure'], 'selected_domains': ['Strategy Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 21:40:38,729 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:40:38,730 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:40:43,094 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!', '007 James Bond: Live and Let Die', '#MyLife'], 排序: year, 数量: 48
+2025-07-10 21:40:44,236 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:40:44,239 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:41:09,355 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['Gloomhaven'], 排序: similarity, 数量: 48
+2025-07-10 21:41:10,436 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:41:10,440 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:41:24,493 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ["'CA' Tactical Naval Warfare in the Pacific, 1941-45"], 排序: year, 数量: 48
+2025-07-10 21:41:25,592 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:41:25,594 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:42:08,762 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ["'CA' Tactical Naval Warfare in the Pacific, 1941-45"], 排序: similarity, 数量: 48
+2025-07-10 21:42:09,890 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-10 21:42:09,894 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-10 21:42:44,965 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Enclosure'], 'domains': ['Strategy Games'], 'min_players': 1, 'max_players': 10, 'play_time': 1, 'min_age': 1, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:42:44,965 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Enclosure'], 'selected_domains': ['Strategy Games'], 'preferred_min_players': 1, 'preferred_max_players': 10, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 21:42:44,977 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:42:44,978 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:42:50,051 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Enclosure'], 'domains': ['Strategy Games'], 'min_players': 1, 'max_players': 10, 'play_time': 1, 'min_age': 1, 'complexity': 1, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:42:50,051 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Enclosure'], 'selected_domains': ['Strategy Games'], 'preferred_min_players': 1, 'preferred_max_players': 10, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 1.0}, 排序: similarity, 数量: 48
+2025-07-10 21:42:50,063 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:42:50,064 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-10 21:42:53,220 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Enclosure'], 'domains': ['Strategy Games'], 'min_players': 1, 'max_players': 10, 'play_time': 1, 'min_age': 1, 'complexity': 5, 'sort_by': 'similarity', 'limit': 48}
+2025-07-10 21:42:53,220 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Enclosure'], 'selected_domains': ['Strategy Games'], 'preferred_min_players': 1, 'preferred_max_players': 10, 'preferred_play_time': 1, 'preferred_min_age': 1, 'preferred_complexity': 5.0}, 排序: similarity, 数量: 48
+2025-07-10 21:42:53,234 - RecommendationSystemLogger - INFO - 偏好推荐结果: 48 个游戏
+2025-07-10 21:42:53,236 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 48 个结果
+2025-07-11 11:01:10,157 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:01:10,157 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:01:10,251 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:01:10,252 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:01:12,314 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:01:12,314 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:01:12,404 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:01:12,405 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:01:16,725 - RecommendationSystemLogger - ERROR - 404错误: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-11 11:01:26,075 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['.hack//ENEMY'], 排序: similarity, 数量: 48
+2025-07-11 11:01:27,127 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-11 11:01:27,130 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-11 11:01:48,689 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['.hack//ENEMY'], 排序: similarity, 数量: 48
+2025-07-11 11:01:49,780 - RecommendationSystemLogger - INFO - 推荐结果: 48 个游戏
+2025-07-11 11:01:49,783 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 48 个结果
+2025-07-11 11:02:06,747 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Bias'], 'domains': ["Children's Games"], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 11:02:06,747 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Bias'], 'selected_domains': ["Children's Games"], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 11:02:06,762 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 11:02:06,763 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 11:41:11,653 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:41:11,653 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:41:11,744 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:41:11,745 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:41:13,833 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:41:13,833 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:41:13,923 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:41:13,924 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:41:31,056 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['1754: Conquest - The French and Indian War'], 排序: similarity, 数量: 12
+2025-07-11 11:41:32,181 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 11:41:32,185 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 11:42:08,465 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Drafting'], 'domains': ['Abstract Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 11:42:08,465 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Drafting'], 'selected_domains': ['Abstract Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 11:42:08,481 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 11:42:08,482 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 11:49:24,243 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:49:24,243 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:49:24,334 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:49:24,335 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:49:26,413 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:49:26,413 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:49:26,507 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:49:26,509 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:49:35,084 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Sealed Bid'], 'domains': ['Party Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 11:49:35,084 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Sealed Bid'], 'selected_domains': ['Party Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 11:49:35,099 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 11:49:35,103 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 11:53:16,241 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:53:16,241 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:53:16,334 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:53:16,336 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:53:18,456 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:53:18,456 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:53:18,550 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:53:18,551 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:53:23,591 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Sealed Bid'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 11:53:23,591 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Sealed Bid'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 11:53:23,603 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 11:53:23,605 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 11:54:35,570 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:54:35,570 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:54:35,659 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:54:35,661 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:54:37,771 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:54:37,771 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:54:37,864 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:54:37,866 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:54:44,079 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['(Your Name Here) and the Argonauts'], 排序: similarity, 数量: 12
+2025-07-11 11:54:45,050 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 11:54:45,053 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 11:55:53,941 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:55:53,941 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:55:54,029 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:55:54,030 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:55:56,180 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 11:55:56,180 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 11:55:56,268 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 11:55:56,270 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 11:56:01,247 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['.hack//ENEMY'], 排序: similarity, 数量: 12
+2025-07-11 11:56:01,711 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 11:56:01,713 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 13:28:50,642 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:28:50,642 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:28:50,732 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 13:28:50,733 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 13:28:52,846 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:28:52,846 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:28:52,936 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 13:28:52,938 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 13:28:58,565 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Auction: Sealed Bid'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 13:28:58,565 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Auction: Sealed Bid'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 13:28:58,574 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 13:28:58,577 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 13:38:15,868 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:38:15,868 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:38:15,906 - RecommendationSystemLogger - ERROR - 数据加载失败: "None of ['ID'] are in the columns"
+2025-07-11 13:38:15,908 - RecommendationSystemLogger - WARNING - 应用启动，但数据加载失败
+2025-07-11 13:38:18,006 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:38:18,006 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:38:18,043 - RecommendationSystemLogger - ERROR - 数据加载失败: "None of ['ID'] are in the columns"
+2025-07-11 13:38:18,046 - RecommendationSystemLogger - WARNING - 应用启动，但数据加载失败
+2025-07-11 13:38:53,993 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:38:53,993 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:38:54,030 - RecommendationSystemLogger - ERROR - 数据加载失败: "None of ['ID'] are in the columns"
+2025-07-11 13:38:54,032 - RecommendationSystemLogger - WARNING - 应用启动，但数据加载失败
+2025-07-11 13:38:56,199 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:38:56,199 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:38:56,236 - RecommendationSystemLogger - ERROR - 数据加载失败: "None of ['ID'] are in the columns"
+2025-07-11 13:38:56,238 - RecommendationSystemLogger - WARNING - 应用启动，但数据加载失败
+2025-07-11 13:44:38,560 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:44:38,560 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:44:38,652 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 13:44:38,654 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 13:44:40,778 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 13:44:40,778 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 13:44:40,868 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 13:44:40,869 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 13:44:52,234 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ["'Wacht am Rhein': The Battle of the Bulge, 16 Dec 44 - 2 Jan 45"], 排序: similarity, 数量: 12
+2025-07-11 13:44:52,244 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: Input contains NaN.
+2025-07-11 14:04:30,180 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:04:30,180 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:04:30,272 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:04:30,274 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:04:32,387 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:04:32,387 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:04:32,477 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:04:32,478 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:04:37,871 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!'], 排序: similarity, 数量: 12
+2025-07-11 14:04:37,878 - RecommendationSystemLogger - ERROR - 游戏推荐时出错: Input contains NaN.
+2025-07-11 14:22:14,720 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:22:14,720 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:22:14,810 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:22:14,811 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:22:16,929 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:22:16,929 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:22:17,028 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:22:17,029 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:22:21,017 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['007 James Bond: The Man with the Golden Gun'], 排序: similarity, 数量: 12
+2025-07-11 14:22:21,505 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 14:22:21,507 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 14:32:54,844 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:32:54,844 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:32:54,940 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:32:54,941 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:32:57,059 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:32:57,059 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:32:57,163 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:32:57,164 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:33:02,623 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Points'], 'domains': ['Customizable Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 14:33:02,623 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Points'], 'selected_domains': ['Customizable Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 14:33:02,635 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 14:33:02,638 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 14:38:36,352 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:38:36,352 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:38:36,441 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:38:36,442 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:38:38,597 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:38:38,597 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:38:38,685 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:38:38,686 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:38:50,936 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['...und tschüss!'], 排序: similarity, 数量: 12
+2025-07-11 14:38:51,998 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 14:38:52,001 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 14:41:31,634 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:41:31,635 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:41:31,730 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:41:31,731 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:41:33,914 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:41:33,914 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:41:34,006 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:41:34,007 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:41:42,002 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Action Queue'], 'domains': ['Family Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 14:41:42,002 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Action Queue'], 'selected_domains': ['Family Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 14:41:42,018 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 14:41:42,022 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 14:43:57,027 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:43:57,027 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:43:57,116 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:43:57,117 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:43:59,258 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:43:59,259 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:43:59,348 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:43:59,350 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:44:07,304 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['*Star'], 排序: similarity, 数量: 12
+2025-07-11 14:44:08,368 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 14:44:08,371 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 14:44:20,026 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Party Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 14:44:20,026 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Party Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 14:44:20,041 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 14:44:20,043 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 14:44:23,171 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Party Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 14:44:23,171 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Party Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 14:44:23,187 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 14:44:23,188 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 14:44:28,634 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': ['Acting'], 'domains': ['Party Games'], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 14:44:28,634 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': ['Acting'], 'selected_domains': ['Party Games'], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 14:44:28,648 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 14:44:28,652 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 14:44:32,602 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['*Star'], 排序: similarity, 数量: 12
+2025-07-11 14:44:33,715 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 14:44:33,718 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 14:59:27,063 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:59:27,063 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:59:27,147 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:59:27,150 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 14:59:29,543 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 14:59:29,543 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 14:59:29,648 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 14:59:29,650 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 15:01:10,551 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['10 Latidos'], 排序: similarity, 数量: 12
+2025-07-11 15:01:11,844 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 15:01:11,847 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 15:06:33,097 - RecommendationSystemLogger - INFO - 收到推荐请求 - 游戏: ['1 Stein + Co.', '1572: The Lost Expedition', '1313 Dead End Drive'], 排序: similarity, 数量: 12
+2025-07-11 15:06:34,233 - RecommendationSystemLogger - INFO - 推荐结果: 12 个游戏
+2025-07-11 15:06:34,236 - RecommendationSystemLogger - INFO - 成功生成推荐，返回 12 个结果
+2025-07-11 16:04:16,556 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 16:04:16,556 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 16:04:16,573 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 16:04:16,573 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
+2025-07-11 16:18:56,082 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 16:18:56,082 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 16:18:56,161 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 16:18:56,162 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 16:18:57,883 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 16:18:57,883 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 16:18:57,962 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 16:18:57,963 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 17:09:10,284 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 17:09:10,284 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 17:09:10,355 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 17:09:10,356 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 17:09:12,155 - RecommendationSystemLogger - INFO - Flask 应用启动
+2025-07-11 17:09:12,155 - RecommendationSystemLogger - INFO - 开始加载数据集和模型
+2025-07-11 17:09:12,231 - RecommendationSystemLogger - INFO - 数据集加载完成，共 20343 个游戏
+2025-07-11 17:09:12,232 - RecommendationSystemLogger - INFO - 应用启动成功，数据已加载
+2025-07-11 17:15:58,468 - RecommendationSystemLogger - INFO - 收到偏好推荐请求数据: {'mechanics': [], 'domains': [], 'min_players': 2, 'max_players': 4, 'play_time': 60, 'min_age': 12, 'complexity': 3, 'sort_by': 'similarity', 'limit': 12}
+2025-07-11 17:15:58,468 - RecommendationSystemLogger - INFO - 处理偏好推荐请求: {'selected_mechanics': [], 'selected_domains': [], 'preferred_min_players': 2, 'preferred_max_players': 4, 'preferred_play_time': 60, 'preferred_min_age': 12, 'preferred_complexity': 3.0}, 排序: similarity, 数量: 12
+2025-07-11 17:15:58,486 - RecommendationSystemLogger - INFO - 偏好推荐结果: 12 个游戏
+2025-07-11 17:15:58,489 - RecommendationSystemLogger - INFO - 成功生成偏好推荐，返回 12 个结果
