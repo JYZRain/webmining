@@ -1,3 +1,6 @@
+setuptools>=61.0
+wheel
+
 # 桌游推荐系统依赖文件
 # Core Framework
 Flask==2.3.3
