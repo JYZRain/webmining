@@ -5,3 +5,4 @@ services:
     buildCommand: ""
     startCommand: "python app.py"
     plan: free
+    pythonVersion: 3.9.0
