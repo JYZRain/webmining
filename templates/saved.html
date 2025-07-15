@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌游方舟 | 我的收藏</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 语言切换功能 -->
+    <link rel="stylesheet" href="/static/css/language-toggle.css">
+    <script src="/static/js/language.js"></script>
+    
+    <style>
+        :root {
+            --primary-color: #8a6a4f;
+            --accent-color: #c73e3a;
+            --bg-color: #f0e8d9;
+            --card-bg: #fdfaf2;
+            --text-dark: #4a3f35;
+            --text-light: #7a6a5a;
+            --border-color: #dcd0c0;
+            --success-color: #4caf50;
+            --gold-color: #ffd700;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #e8dcc6 100%);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9em;
+        }
+
+        .user-info a:hover {
+            opacity: 0.8;
+        }
+
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .user-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            color: white;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(138, 106, 79, 0.3);
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* 主内容区域 */
+        .main-content {
+            margin-top: 80px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .page-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 收藏列表 */
+        .saved-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .saved-item {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .saved-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .saved-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .saved-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .saved-date {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .saved-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .btn-view:hover {
+            background: #45a049;
+        }
+
+        .btn-delete {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #b73530;
+        }
+
+        .saved-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .summary-item {
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .summary-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .summary-value {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .games-preview {
+            margin-top: 1rem;
+        }
+
+        .games-preview-title {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .games-preview-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .game-tag {
+            background: var(--border-color);
+            color: var(--text-dark);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-light);
+        }
+
+        .empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--border-color);
+        }
+
+        .empty-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .empty-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(138, 106, 79, 0.3);
+        }
+
+        /* 加载状态 */
+        .loading-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 通知提示 */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--success-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: none;
+            align-items: center;
+            gap: 1rem;
+            z-index: 3000;
+            animation: slideInRight 0.3s ease;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        .toast.show {
+            display: flex;
+        }
+
+        .toast.error {
+            background: var(--accent-color);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .saved-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .saved-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-dice-d20"></i> <span data-i18n="nav.logo">桌游方舟</span>
+            </div>
+            <div class="nav-actions">
+                <a href="/wizard" class="btn btn-outline">
+                    <i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span>
+                </a>
+                <a href="/recommendations" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> <span data-i18n="nav.back_to_recommendations">返回推荐</span>
+                </a>
+                <div id="user-section">
+                    <!-- 用户信息将通过JavaScript动态加载 -->
+                    <a href="/login" class="login-btn"><span data-i18n="nav.login">登录</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">
+                <i class="fas fa-bookmark"></i>
+                <span data-i18n="saved.title">我的收藏</span>
+            </h1>
+            <p class="page-subtitle">
+                <span data-i18n="saved.subtitle">这里保存着你之前收藏的所有推荐记录</span>
+            </p>
+        </div>
+
+        <!-- 收藏列表容器 -->
+        <div id="saved-container">
+            <!-- 加载状态 -->
+            <div class="loading-state" id="loading-state">
+                <div class="loading-spinner"></div>
+                <p><span data-i18n="saved.loading">正在加载收藏记录...</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通知提示 -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">操作成功！</span>
+    </div>
+
+    <script>
+        // 用户认证状态检查
+        async function checkUserAuth() {
+            try {
+                const response = await fetch('/api/user/info');
+                if (response.ok) {
+                    const user = await response.json();
+                    displayUserInfo(user);
+                } else {
+                    displayLoginButton();
+                }
+            } catch (error) {
+                displayLoginButton();
+            }
+        }
+
+        function displayUserInfo(user) {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <div class="user-info">
+                    <a href="/profile" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <div class="user-avatar">${user.username[0].toUpperCase()}</div>
+                        <span>${user.username}</span>
+                    </a>
+                    <a href="/logout" style="margin-left: 15px; color: var(--text-light); text-decoration: none;"><span data-i18n="nav.logout">登出</span></a>
+                </div>
+            `;
+            // 重新应用语言翻译
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        function displayLoginButton() {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <a href="/login" class="login-btn"><span data-i18n="nav.login">登录</span></a>
+            `;
+            // 更新多语言
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        // 显示通知
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            const icon = toast.querySelector('i');
+
+            toastMessage.textContent = message;
+
+            if (isError) {
+                toast.classList.add('error');
+                icon.className = 'fas fa-exclamation-circle';
+            } else {
+                toast.classList.remove('error');
+                icon.className = 'fas fa-check-circle';
+            }
+
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // 格式化日期
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const locale = window.langManager.getCurrentLang() === 'zh' ? 'zh-CN' : 'en-US';
+            return date.toLocaleString(locale, {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        // 渲染收藏列表
+        function renderSavedRecommendations(recommendations) {
+            const container = document.getElementById('saved-container');
+
+            if (!recommendations || recommendations.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">📖</div>
+                        <h2 class="empty-title">${window.langManager.t('saved.empty.no_records')}</h2>
+                        <p class="empty-text">${window.langManager.t('saved.empty.text')}</p>
+                        <a href="/wizard" class="btn-primary">
+                            <i class="fas fa-magic"></i> ${window.langManager.t('saved.empty.button')}
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            const savedListHTML = recommendations.map(item => {
+                const date = formatDate(item.created_at);
+                const recs = item.recommendations;
+                const prefs = item.preferences;
+
+                // 获取推荐游戏预览
+                const mainGames = recs.main || [];
+                const gamePreview = mainGames.slice(0, 3).map(game => game.name).join(', ');
+                const moreCount = Math.max(0, mainGames.length - 3);
+
+                return `
+                    <div class="saved-item" onclick="viewRecommendation(${item.id})">
+                        <div class="saved-header">
+                            <div>
+                                <div class="saved-title">${item.title}</div>
+                                <div class="saved-date">${date}</div>
+                            </div>
+                            <div class="saved-actions">
+                                <button class="btn-small btn-view" onclick="event.stopPropagation(); viewRecommendation(${item.id})">
+                                    <i class="fas fa-eye"></i> <span data-i18n="saved.view">查看</span>
+                                </button>
+                                <button class="btn-small btn-delete" onclick="event.stopPropagation(); deleteRecommendation(${item.id})">
+                                    <i class="fas fa-trash"></i> <span data-i18n="saved.delete">删除</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="saved-summary">
+                            <div class="summary-item">
+                                <div class="summary-label">${window.langManager.t('saved.summary.recommended_games')}</div>
+                                <div class="summary-value">${mainGames.length} ${window.langManager.t('common.games_unit')}</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">${window.langManager.t('saved.summary.players_count')}</div>
+                                <div class="summary-value">${prefs.gameSettings?.players || window.langManager.t('common.not_set')}</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">${window.langManager.t('saved.summary.game_time')}</div>
+                                <div class="summary-value">${prefs.gameSettings?.time || window.langManager.t('common.not_set')}${prefs.gameSettings?.time ? window.langManager.t('common.minutes') : ''}</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">${window.langManager.t('saved.summary.game_complexity')}</div>
+                                <div class="summary-value">${prefs.gameSettings?.complexity || window.langManager.t('common.not_set')}</div>
+                            </div>
+                        </div>
+
+                        ${gamePreview ? `
+                            <div class="games-preview">
+                                <div class="games-preview-title">${window.langManager.t('saved.preview.game_title')}</div>
+                                <div class="games-preview-list">
+                                    ${mainGames.slice(0, 3).map(game => `<span class="game-tag">${game.name}</span>`).join('')}
+                                    ${moreCount > 0 ? `<span class="game-tag">+${moreCount}${window.langManager.t('common.more_games')}</span>` : ''}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = `<div class="saved-list">${savedListHTML}</div>`;
+            
+            // 更新多语言
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        // 查看推荐记录
+        async function viewRecommendation(recId) {
+            try {
+                const response = await fetch(`/api/recommendations/saved/${recId}`);
+                if (response.ok) {
+                    const data = await response.json();
+
+                    // 将数据存储到 sessionStorage，用于在推荐页面显示
+                    sessionStorage.setItem('viewRecommendation', JSON.stringify(data));
+
+                    // 跳转到推荐页面
+                    window.location.href = '/recommendations';
+                } else {
+                    showToast(window.langManager.t('common.get_record_failed'), true);
+                }
+            } catch (error) {
+                console.error(window.langManager.t('common.get_record_failed'), error);
+                showToast(window.langManager.t('saved.toast.network_error'), true);
+            }
+        }
+
+        // 删除推荐记录
+        async function deleteRecommendation(recId) {
+                    if (!confirm(window.langManager.t('common.confirm_delete_record'))) {
+            return;
+        }
+
+            try {
+                const response = await fetch(`/api/recommendations/saved/${recId}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    showToast(window.langManager.t('saved.toast.deleted'));
+                    // 重新加载列表
+                    loadSavedRecommendations();
+                } else {
+                    showToast(window.langManager.t('saved.toast.delete_failed'), true);
+                }
+            } catch (error) {
+                console.error(window.langManager.t('common.delete_record_failed'), error);
+                showToast(window.langManager.t('saved.toast.network_error'), true);
+            }
+        }
+
+        // 加载收藏的推荐记录
+        async function loadSavedRecommendations() {
+            try {
+                const response = await fetch('/api/recommendations/saved');
+                if (response.ok) {
+                    const data = await response.json();
+                    renderSavedRecommendations(data.recommendations);
+                } else {
+                    throw new Error(window.langManager.t('common.data_loading_failed'));
+                }
+            } catch (error) {
+                console.error(window.langManager.t('saved.loading'), error);
+                document.getElementById('saved-container').innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">❌</div>
+                        <h2 class="empty-title">${window.langManager.t('saved.error.load_failed')}</h2>
+                        <p class="empty-text">${window.langManager.t('saved.error.load_failed_desc')}</p>
+                        <button class="btn-primary" onclick="loadSavedRecommendations()">
+                            <i class="fas fa-refresh"></i> ${window.langManager.t('common.reload')}
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 检查用户认证状态
+            checkUserAuth();
+            loadSavedRecommendations();
+        });
+    </script>
+</body>
+</html>

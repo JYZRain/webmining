@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人资料 | 桌游方舟</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 语言切换功能 -->
+    <link rel="stylesheet" href="/static/css/language-toggle.css">
+    <script src="/static/js/language.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #8a6a4f;
+            --accent-color: #c73e3a;
+            --bg-color: #f0e8d9;
+            --card-bg: #fdfaf2;
+            --text-dark: #4a3f35;
+            --text-light: #7a6a5a;
+            --border-color: #dcd0c0;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #e8dcc6 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8em;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .user-menu {
+            position: relative;
+        }
+
+        .user-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+
+        .profile-header {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+            font-weight: 700;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            color: var(--text-light);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .profile-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card i {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .stat-card h3 {
+            font-size: 2em;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .stat-card p {
+            color: var(--text-light);
+            font-size: 1.1em;
+        }
+
+        .profile-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 106, 79, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-danger {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #d32f2f;
+        }
+
+        .recent-activity {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .activity-header h2 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+        }
+
+        .activity-item {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+
+        .activity-content h4 {
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .activity-content p {
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-light);
+        }
+
+        .empty-state i {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .profile-header {
+                padding: 30px 20px;
+            }
+
+            .profile-info h1 {
+                font-size: 2em;
+            }
+
+            .profile-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="{{ url_for('wizard') }}" class="logo"><span data-i18n="nav.logo">桌游方舟</span></a>
+            <div class="nav-links">
+                <a href="{{ url_for('wizard') }}"><span data-i18n="nav.discover">发现游戏</span></a>
+                <a href="{{ url_for('saved_recommendations') }}"><span data-i18n="nav.my_collection">我的收藏</span></a>
+                <a href="{{ url_for('profile') }}"><span data-i18n="nav.profile">个人资料</span></a>
+                <div class="nav-actions">
+                    <div class="user-menu">
+                        <button class="user-btn" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i> <span data-i18n="nav.logout">登出</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                {{ user.username[0].upper() }}
+            </div>
+            <div class="profile-info">
+                <h1>{{ user.username }}</h1>
+                <p><i class="fas fa-envelope"></i> {{ user.email }}</p>
+                <p><i class="fas fa-calendar"></i> <span data-i18n="profile.joined">加入时间</span>: <span id="joined-date">{{ user.created_at.strftime('%Y年%m月%d日') }}</span></p>
+            </div>
+            <div class="profile-actions">
+                <a href="{{ url_for('wizard') }}" class="btn btn-primary">
+                    <i class="fas fa-search"></i> <span data-i18n="profile.discover_new">发现新游戏</span>
+                </a>
+                <a href="{{ url_for('saved_recommendations') }}" class="btn btn-secondary">
+                    <i class="fas fa-heart"></i> <span data-i18n="nav.my_collection">我的收藏</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile-stats">
+            <div class="stat-card">
+                <i class="fas fa-heart"></i>
+                <h3 id="saved-count">-</h3>
+                <p><span data-i18n="profile.saved_recommendations">收藏的推荐</span></p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar"></i>
+                <h3 id="days-since-join">-</h3>
+                <p><span data-i18n="profile.days_since_join">加入天数</span></p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <h3 id="favorite-category">-</h3>
+                <p><span data-i18n="profile.favorite_category">偏好类型</span></p>
+            </div>
+        </div>
+
+        <div class="recent-activity">
+            <div class="activity-header">
+                <h2><span data-i18n="profile.recent_activity">最近活动</span></h2>
+                <a href="{{ url_for('saved_recommendations') }}" class="btn btn-secondary">
+                    <span data-i18n="profile.view_all">查看全部</span>
+                </a>
+            </div>
+            <div id="activity-list">
+                <div class="empty-state">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p><span data-i18n="profile.loading">加载中...</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 登出函数
+        function logout() {
+            const confirmMessage = window.langManager ? window.langManager.t('profile.confirm_logout') : '确定要登出吗？';
+            if (confirm(confirmMessage)) {
+                window.location.href = '/logout';
+            }
+        }
+
+        // 计算加入天数
+        function calculateDaysSinceJoin() {
+            const joinDate = new Date('{{ user.created_at.isoformat() }}');
+            const today = new Date();
+            const diffTime = Math.abs(today - joinDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            document.getElementById('days-since-join').textContent = diffDays;
+        }
+
+        // 加载用户统计数据
+        async function loadUserStats() {
+            try {
+                const response = await fetch('/api/recommendations/saved');
+                const data = await response.json();
+                
+                const savedCount = data.recommendations ? data.recommendations.length : 0;
+                document.getElementById('saved-count').textContent = savedCount;
+                
+                // 分析偏好类型（这里简化处理）
+                if (savedCount > 0) {
+                    document.getElementById('favorite-category').textContent = window.langManager.t('game.type.strategy');
+                } else {
+                    document.getElementById('favorite-category').textContent = window.langManager.t('common.unknown');
+                }
+                
+                // 显示最近活动
+                displayRecentActivity(data.recommendations || []);
+                
+            } catch (error) {
+                console.error(window.langManager.t('profile.error.load_stats'), error);
+                document.getElementById('saved-count').textContent = '0';
+                document.getElementById('favorite-category').textContent = window.langManager.t('common.unknown');
+                showEmptyActivity();
+            }
+        }
+
+        // 显示最近活动
+        function displayRecentActivity(recommendations) {
+            const activityList = document.getElementById('activity-list');
+            
+            if (recommendations.length === 0) {
+                showEmptyActivity();
+                return;
+            }
+            
+            const recent = recommendations.slice(0, 5);
+            const html = recent.map(rec => {
+                const date = new Date(rec.created_at);
+                const locale = window.langManager && window.langManager.getCurrentLang() === 'zh' ? 'zh-CN' : 'en-US';
+                const formattedDate = date.toLocaleDateString(locale);
+                
+                return `
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>${window.langManager.t('profile.saved_recommendation')}: ${rec.title}</h4>
+                            <p>${formattedDate}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            activityList.innerHTML = html;
+        }
+
+        // 显示空状态
+        function showEmptyActivity() {
+            const activityList = document.getElementById('activity-list');
+            activityList.innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-gamepad"></i>
+                    <p data-i18n="profile.no_activity">还没有任何活动记录</p>
+                    <p data-i18n="profile.discover_games">去发现一些精彩的桌游吧！</p>
+                </div>
+            `;
+            
+            // 动态生成HTML后需要手动更新翻译
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        // 格式化加入日期
+        function formatJoinedDate() {
+            const joinedDateElement = document.getElementById('joined-date');
+            if (joinedDateElement) {
+                const dateText = joinedDateElement.textContent;
+                // 提取年月日
+                const match = dateText.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+                if (match) {
+                    const year = match[1];
+                    const month = match[2];
+                    const day = match[3];
+                    const date = new Date(year, month - 1, day);
+                    
+                    const locale = window.langManager && window.langManager.getCurrentLang() === 'zh' ? 'zh-CN' : 'en-US';
+                    const formattedDate = date.toLocaleDateString(locale, {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                    
+                    joinedDateElement.textContent = formattedDate;
+                }
+            }
+        }
+
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            formatJoinedDate();
+            calculateDaysSinceJoin();
+            loadUserStats();
+            
+            // 监听语言变化
+            if (window.langManager) {
+                window.langManager.addObserver(function() {
+                    formatJoinedDate();
+                    loadUserStats(); // 重新加载用户统计以更新日期格式
+                    
+                    // 如果当前显示的是空状态，也需要重新应用翻译
+                    const activityList = document.getElementById('activity-list');
+                    if (activityList && activityList.querySelector('.empty-state')) {
+                        showEmptyActivity();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

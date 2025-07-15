@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌游方舟 | 发现你的专属桌游</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 语言切换功能 -->
+    <link rel="stylesheet" href="/static/css/language-toggle.css">
+    <script src="/static/js/language.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #8a6a4f;
+            --accent-color: #c73e3a;
+            --bg-color: #f0e8d9;
+            --card-bg: #fdfaf2;
+            --text-dark: #4a3f35;
+            --text-light: #7a6a5a;
+            --border-color: #dcd0c0;
+            --success-color: #4caf50;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #e8dcc6 100%);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            height: 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .navbar-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5em;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .navbar-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .navbar-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9em;
+        }
+
+        .user-info a:hover {
+            opacity: 0.8;
+        }
+
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .user-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, var(--primary-color), #a67c52);
+            color: white;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(138, 106, 79, 0.3);
+        }
+
+        /* 进度条 */
+        .progress-container {
+            padding: 1rem 0;
+            margin-top: 60px;
+        }
+
+
+
+        .step-indicators {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 800px;
+            margin: 1.2rem auto 0;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+        }
+
+        .step-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .step-item:has(.step-dot.active) .step-label {
+            color: var(--accent-color);
+            opacity: 1;
+            font-weight: 600;
+        }
+
+        .step-item:has(.step-dot.completed) .step-label {
+            color: var(--success-color);
+            opacity: 1;
+            font-weight: 500;
+        }
+
+
+
+        .step-dot {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--text-light);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-dot.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(199, 62, 58, 0.4);
+        }
+
+        .step-dot.completed {
+            background: var(--success-color);
+            border-color: var(--success-color);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+        }
+
+        .step-dot.completed::before {
+            content: '✓';
+            font-size: 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .navbar-content {
+                padding: 0 15px;
+            }
+            
+            .navbar-logo {
+                font-size: 1.3em;
+            }
+            
+            .navbar-menu {
+                gap: 15px;
+            }
+            
+            .navbar-menu a {
+                font-size: 0.85em;
+            }
+            
+            .progress-container {
+                padding: 0.8rem 0 1.5rem;
+            }
+            
+            .step-indicators {
+                width: 95%;
+            }
+            
+            .step-dot {
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
+                border-width: 2px;
+            }
+            
+            .step-label {
+                font-size: 0.7rem;
+                margin-top: 0.4rem;
+            }
+            
+            .step-indicators {
+                margin: 1rem auto 0;
+            }
+            
+            .wizard-container {
+                margin: 0 auto 50px;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar-logo {
+                font-size: 1.2em;
+            }
+            
+            .navbar-menu {
+                gap: 10px;
+            }
+            
+            .step-dot {
+                width: 28px;
+                height: 28px;
+                font-size: 0.7rem;
+            }
+            
+            .step-label {
+                font-size: 0.6rem;
+                margin-top: 0.3rem;
+                display: none; /* 在超小屏幕上隐藏标签 */
+            }
+            
+
+            
+            .wizard-container {
+                margin: 0 auto 50px;
+            }
+        }
+
+        /* 主容器 */
+        .wizard-container {
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 0 2rem;
+        }
+
+        .step {
+            display: none;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .step-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .step-header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .step-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .step-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* 选择网格 */
+        .choice-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .choice-grid.games {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+
+        .choice-grid.categories {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+
+        .choice-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: visible;
+        }
+
+        .choice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(138, 106, 79, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .choice-card.selected {
+            border-color: var(--accent-color);
+            background: linear-gradient(135deg, var(--card-bg) 0%, #f5f0e8 100%);
+            box-shadow: 0 8px 25px rgba(199, 62, 58, 0.3);
+        }
+
+        .choice-card.selected::after {
+            content: '✓';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .choice-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .choice-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .choice-card .icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-align: center;
+            display: block;
+        }
+
+        /* 游戏卡片 */
+        .game-card {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .game-card .game-image-container {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game-card .game-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .game-card .placeholder-icon {
+            color: white;
+            font-size: 2.5rem;
+            position: absolute;
+        }
+
+        .game-card .game-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
+            min-height: 2.6rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .game-card .game-rating {
+            color: #fbc02d;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .game-card .game-players {
+            color: var(--text-light);
+            font-size: 0.75rem;
+        }
+
+        /* 滑块控件 */
+        .slider-group {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .slider-item {
+            margin-bottom: 2rem;
+        }
+
+        .slider-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .slider-label h4 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .slider-value {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .slider-options {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .slider-option {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .slider-option:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .slider-option.selected {
+            border-color: var(--accent-color);
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .slider-option h5 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .slider-option p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* 按钮 */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(145deg, var(--accent-color), #a6322f);
+            color: white;
+            box-shadow: 0 4px 15px rgba(199, 62, 58, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(199, 62, 58, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-magic {
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #ff9ff3, #54a0ff);
+            background-size: 300% 300%;
+            animation: magicGradient 3s ease infinite;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes magicGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .btn-magic:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 加载动画 */
+        .loading-screen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .magic-circle {
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .magic-circle::before {
+            content: '🎲';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+        }
+
+        .loading-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .choice-grid.games {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wizard-container {
+                margin-top: 100px;
+                padding: 0 1rem;
+            }
+
+            .step-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .step-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .choice-grid.games {
+                grid-template-columns: 1fr;
+            }
+
+            .choice-grid.categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .slider-options {
+                flex-direction: column;
+            }
+
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .choice-grid.categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="{{ url_for('wizard') }}" class="navbar-logo"><span data-i18n="nav.logo">桌游方舟</span></a>
+            <div class="navbar-menu">
+                <a href="{{ url_for('saved_recommendations') }}"><span data-i18n="nav.my_collection">我的收藏</span></a>
+                <div id="user-section">
+                    <!-- 用户信息将通过JavaScript动态加载 -->
+                    <a href="{{ url_for('login') }}" class="login-btn"><span data-i18n="nav.login">登录</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 进度条 -->
+    <div class="progress-container">
+        <div class="step-indicators">
+            <div class="step-item">
+                <div class="step-dot active" data-step="1">1</div>
+                <div class="step-label" data-i18n="step.games">游戏偏好</div>
+            </div>
+            <div class="step-item">
+                <div class="step-dot" data-step="2">2</div>
+                <div class="step-label" data-i18n="step.mechanics">机制偏好</div>
+            </div>
+            <div class="step-item">
+                <div class="step-dot" data-step="3">3</div>
+                <div class="step-label" data-i18n="step.categories">类型偏好</div>
+            </div>
+            <div class="step-item">
+                <div class="step-dot" data-step="4">4</div>
+                <div class="step-label" data-i18n="step.settings">游戏设置</div>
+            </div>
+            <div class="step-item">
+                <div class="step-dot" data-step="5">🚀</div>
+                <div class="step-label" data-i18n="step.results">获取推荐</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主向导容器 -->
+    <div class="wizard-container">
+        <!-- 步骤 1: 欢迎和经典游戏选择 -->
+        <div class="step active" id="step1">
+            <div class="step-header">
+                <h1><i class="fas fa-dice-d20" style="color: var(--accent-color);"></i> <span data-i18n="wizard.welcome_title">桌游方舟</span></h1>
+                <p data-i18n="wizard.welcome_subtitle">欢迎来到你的专属桌游推荐之旅！让我们从你熟悉或喜爱的经典游戏开始探索。</p>
+                <p><em data-i18n="wizard.welcome_hint">选择你认识或感兴趣的游戏（可多选，也可不选）</em></p>
+            </div>
+
+            <div class="choice-grid games" id="classic-games">
+                <div class="choice-card">
+                    <p>正在加载经典游戏...</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="nextStep(1)">
+                    <i class="fas fa-arrow-right"></i> <span data-i18n="wizard.continue_explore">继续探索</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 步骤 2: 游戏机制偏好 -->
+        <div class="step" id="step2">
+            <div class="step-header">
+                <h2><i class="fas fa-cogs"></i> <span data-i18n="wizard.mechanics_title">你喜欢什么样的游戏体验？</span></h2>
+                <p data-i18n="wizard.mechanics_subtitle">每种游戏机制都带来不同的乐趣，选择你最感兴趣的类型</p>
+            </div>
+
+            <div class="choice-grid categories" id="game-mechanics">
+                <div class="choice-card" data-mechanic="strategy">
+                    <i class="icon fas fa-chess"></i>
+                    <h3 data-i18n="mechanic.strategy.title">策略规划师</h3>
+                    <p data-i18n="mechanic.strategy.desc">深度思考，精心规划每一步，享受运筹帷幄的成就感</p>
+                </div>
+                <div class="choice-card" data-mechanic="luck">
+                    <i class="icon fas fa-dice"></i>
+                    <h3 data-i18n="mechanic.luck.title">幸运冒险家</h3>
+                    <p data-i18n="mechanic.luck.desc">拥抱不确定性，在运气与决策间寻找刺激平衡</p>
+                </div>
+                <div class="choice-card" data-mechanic="cooperation">
+                    <i class="icon fas fa-users"></i>
+                    <h3 data-i18n="mechanic.cooperation.title">团队合作者</h3>
+                    <p data-i18n="mechanic.cooperation.desc">与朋友携手并进，共同面对挑战，分享胜利喜悦</p>
+                </div>
+                <div class="choice-card" data-mechanic="cards">
+                    <i class="icon fas fa-layer-group"></i>
+                    <h3 data-i18n="mechanic.cards.title">卡牌收集师</h3>
+                    <p data-i18n="mechanic.cards.desc">收集、组合、构建，在手牌管理中展现智慧</p>
+                </div>
+                <div class="choice-card" data-mechanic="territory">
+                    <i class="icon fas fa-map"></i>
+                    <h3 data-i18n="mechanic.territory.title">领土争夺者</h3>
+                    <p data-i18n="mechanic.territory.desc">控制版图，占领要地，在空间博弈中称王</p>
+                </div>
+                <div class="choice-card" data-mechanic="building">
+                    <i class="icon fas fa-puzzle-piece"></i>
+                    <h3 data-i18n="mechanic.building.title">建造大师</h3>
+                    <p data-i18n="mechanic.building.desc">拼砌图板，构建王国，享受创造的满足感</p>
+                </div>
+                <div class="choice-card" data-mechanic="roleplay">
+                    <i class="icon fas fa-user-ninja"></i>
+                    <h3 data-i18n="mechanic.roleplay.title">角色扮演者</h3>
+                    <p data-i18n="mechanic.roleplay.desc">化身英雄，运用独特能力，在故事中成长</p>
+                </div>
+                <div class="choice-card" data-mechanic="reaction">
+                    <i class="icon fas fa-bolt"></i>
+                    <h3 data-i18n="mechanic.reaction.title">反应达人</h3>
+                    <p data-i18n="mechanic.reaction.desc">考验记忆与反应，在快节奏中展现敏捷</p>
+                </div>
+                <div class="choice-card" data-mechanic="social">
+                    <i class="icon fas fa-comments"></i>
+                    <h3 data-i18n="mechanic.social.title">社交大师</h3>
+                    <p data-i18n="mechanic.social.desc">谈判、欺骗、结盟，在人际博弈中获胜</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(2)">
+                    <i class="fas fa-arrow-left"></i> <span data-i18n="wizard.prev_step">上一步</span>
+                </button>
+                <button class="btn btn-primary" onclick="nextStep(2)">
+                    <i class="fas fa-arrow-right"></i> <span data-i18n="wizard.continue_explore">继续探索</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 步骤 3: 游戏领域 -->
+        <div class="step" id="step3">
+            <div class="step-header">
+                <h2><i class="fas fa-compass"></i> <span data-i18n="wizard.domains_title">选择你的游戏领域</span></h2>
+                <p data-i18n="wizard.domains_subtitle">不同的游戏领域适合不同的场合和心情</p>
+            </div>
+
+            <div class="choice-grid categories" id="game-domains">
+                <div class="choice-card" data-domain="Strategy Games">
+                    <i class="icon fas fa-brain"></i>
+                    <h3 data-i18n="domain.strategy.title">策略游戏</h3>
+                    <p data-i18n="domain.strategy.desc">深度策略，考验智慧与规划能力</p>
+                </div>
+                <div class="choice-card" data-domain="Family Games">
+                    <i class="icon fas fa-home"></i>
+                    <h3 data-i18n="domain.family.title">家庭游戏</h3>
+                    <p data-i18n="domain.family.desc">老少皆宜，增进家庭感情的温馨时光</p>
+                </div>
+                <div class="choice-card" data-domain="Thematic Games">
+                    <i class="icon fas fa-book-open"></i>
+                    <h3 data-i18n="domain.thematic.title">主题游戏</h3>
+                    <p data-i18n="domain.thematic.desc">丰富剧情，沉浸式的故事体验</p>
+                </div>
+                <div class="choice-card" data-domain="Party Games">
+                    <i class="icon fas fa-glass-cheers"></i>
+                    <h3 data-i18n="domain.party.title">聚会游戏</h3>
+                    <p data-i18n="domain.party.desc">轻松欢乐，派对聚会的完美选择</p>
+                </div>
+                <div class="choice-card" data-domain="Abstract Games">
+                    <i class="icon fas fa-shapes"></i>
+                    <h3 data-i18n="domain.abstract.title">抽象游戏</h3>
+                    <p data-i18n="domain.abstract.desc">纯粹策略，不被主题束缚的思维对决</p>
+                </div>
+                <div class="choice-card" data-domain="Children's Games">
+                    <i class="icon fas fa-child"></i>
+                    <h3 data-i18n="domain.children.title">儿童游戏</h3>
+                    <p data-i18n="domain.children.desc">寓教于乐，培养小朋友的思维能力</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(3)">
+                    <i class="fas fa-arrow-left"></i> <span data-i18n="wizard.prev_step">上一步</span>
+                </button>
+                <button class="btn btn-primary" onclick="nextStep(3)">
+                    <i class="fas fa-arrow-right"></i> <span data-i18n="wizard.continue_explore">继续探索</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 步骤 4: 游戏参数 -->
+        <div class="step" id="step4">
+            <div class="step-header">
+                <h2><i class="fas fa-sliders-h"></i> <span data-i18n="wizard.settings_title">今天的游戏设定</span></h2>
+                <p data-i18n="wizard.settings_subtitle">告诉我们今天的游戏情况，我们为你精准推荐</p>
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-item">
+                    <div class="slider-label">
+                        <h4 data-i18n="setting.players.label">今天有几个人玩游戏？</h4>
+                        <span class="slider-value" id="players-value">小团体</span>
+                    </div>
+                    <div class="slider-options" id="players-options">
+                        <div class="slider-option" data-value="1">
+                            <h5>🕴️ <span data-i18n="setting.players.solo">独自一人</span></h5>
+                            <p data-i18n="setting.players.solo.desc">享受独处时光</p>
+                        </div>
+                        <div class="slider-option selected" data-value="2-4">
+                            <h5>👥 <span data-i18n="setting.players.small">小团体</span></h5>
+                            <p data-i18n="setting.players.small.desc">2-4人的亲密聚会</p>
+                        </div>
+                        <div class="slider-option" data-value="5-8">
+                            <h5>👨‍👩‍👧‍👦 <span data-i18n="setting.players.medium">中等聚会</span></h5>
+                            <p data-i18n="setting.players.medium.desc">5-8人的热闹时光</p>
+                        </div>
+                        <div class="slider-option" data-value="8+">
+                            <h5>🎉 <span data-i18n="setting.players.large">大型聚会</span></h5>
+                            <p data-i18n="setting.players.large.desc">8人以上的派对</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-label">
+                        <h4 data-i18n="setting.time.label">今天有多少时间？</h4>
+                        <span class="slider-value" id="time-value">标准时长</span>
+                    </div>
+                    <div class="slider-options" id="time-options">
+                        <div class="slider-option" data-value="30">
+                            <h5>⚡ <span data-i18n="setting.time.quick">快速游戏</span></h5>
+                            <p data-i18n="setting.time.quick.desc">30分钟内结束</p>
+                        </div>
+                        <div class="slider-option selected" data-value="90">
+                            <h5>🕐 <span data-i18n="setting.time.standard">标准时长</span></h5>
+                            <p data-i18n="setting.time.standard.desc">1-2小时的经典体验</p>
+                        </div>
+                        <div class="slider-option" data-value="180">
+                            <h5>🕗 <span data-i18n="setting.time.deep">深度体验</span></h5>
+                            <p data-i18n="setting.time.deep.desc">2-3小时的沉浸游戏</p>
+                        </div>
+                        <div class="slider-option" data-value="240">
+                            <h5>🌙 <span data-i18n="setting.time.epic">史诗冒险</span></h5>
+                            <p data-i18n="setting.time.epic.desc">3小时以上的传奇之旅</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-label">
+                        <h4 data-i18n="setting.age.label">最小的玩家多大？</h4>
+                        <span class="slider-value" id="age-value">少年向</span>
+                    </div>
+                    <div class="slider-options" id="age-options">
+                        <div class="slider-option" data-value="6">
+                            <h5>🧸 <span data-i18n="setting.age.child">儿童友好</span></h5>
+                            <p data-i18n="setting.age.child.desc">6岁以上都能玩</p>
+                        </div>
+                        <div class="slider-option" data-value="10">
+                            <h5>👦 <span data-i18n="setting.age.youth">青少年</span></h5>
+                            <p data-i18n="setting.age.youth.desc">10岁以上适宜</p>
+                        </div>
+                        <div class="slider-option selected" data-value="12">
+                            <h5>🎓 <span data-i18n="setting.age.teen">少年向</span></h5>
+                            <p data-i18n="setting.age.teen.desc">12岁以上推荐</p>
+                        </div>
+                        <div class="slider-option" data-value="14">
+                            <h5>🧑 <span data-i18n="setting.age.mature">成人向</span></h5>
+                            <p data-i18n="setting.age.mature.desc">14岁以上成熟玩家</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-label">
+                        <h4 data-i18n="setting.complexity.label">今天想要什么难度？</h4>
+                        <span class="slider-value" id="complexity-value">适中难度</span>
+                    </div>
+                    <div class="slider-options" id="complexity-options">
+                        <div class="slider-option" data-value="1.5">
+                            <h5>🌱 <span data-i18n="setting.complexity.easy">轻松入门</span></h5>
+                            <p data-i18n="setting.complexity.easy.desc">简单易学，快速上手</p>
+                        </div>
+                        <div class="slider-option selected" data-value="2.5">
+                            <h5>⚖️ <span data-i18n="setting.complexity.medium">适中难度</span></h5>
+                            <p data-i18n="setting.complexity.medium.desc">需要一些思考</p>
+                        </div>
+                        <div class="slider-option" data-value="3.5">
+                            <h5>🧠 <span data-i18n="setting.complexity.hard">烧脑挑战</span></h5>
+                            <p data-i18n="setting.complexity.hard.desc">考验策略思维</p>
+                        </div>
+                        <div class="slider-option" data-value="4.5">
+                            <h5>👑 <span data-i18n="setting.complexity.expert">大师级别</span></h5>
+                            <p data-i18n="setting.complexity.expert.desc">极具挑战性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(4)">
+                    <i class="fas fa-arrow-left"></i> <span data-i18n="wizard.prev_step">上一步</span>
+                </button>
+                <button class="btn btn-magic" onclick="generateRecommendations()">
+                    <i class="fas fa-magic"></i> <span data-i18n="wizard.magic_button">施展推荐魔法！</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载动画 -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="magic-circle"></div>
+        <div class="loading-text">
+            <h2 data-i18n="wizard.loading.title">魔法师正在施法中...</h2>
+            <p data-i18n="wizard.loading.subtitle">根据你的喜好寻找完美的桌游</p>
+        </div>
+    </div>
+
+    <script>
+        // 用户认证状态检查
+        async function checkUserAuth() {
+            try {
+                const response = await fetch('/api/user/info');
+                if (response.ok) {
+                    const user = await response.json();
+                    displayUserInfo(user);
+                } else {
+                    displayLoginButton();
+                }
+            } catch (error) {
+                displayLoginButton();
+            }
+        }
+
+        function displayUserInfo(user) {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <div class="user-info">
+                    <a href="/profile" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <div class="user-avatar">${user.username[0].toUpperCase()}</div>
+                        <span>${user.username}</span>
+                    </a>
+                    <a href="/logout" style="margin-left: 15px; color: var(--text-light); text-decoration: none;"><span data-i18n="nav.logout">登出</span></a>
+                </div>
+            `;
+            // 重新应用语言翻译
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        function displayLoginButton() {
+            const userSection = document.getElementById('user-section');
+            userSection.innerHTML = `
+                <a href="/login" class="login-btn"><span data-i18n="nav.login">登录</span></a>
+            `;
+            // 更新多语言
+            if (window.langManager) {
+                window.langManager.updatePageLanguage();
+            }
+        }
+
+        // 全局状态
+        let currentStep = 1;
+        let selectedGames = [];
+        let selectedMechanics = [];
+        let selectedDomains = [];
+        let gameSettings = {
+            players: '2-4',
+            time: '90',
+            age: '12',
+            complexity: '2.5'
+        };
+
+        // === 优化后的图片加载管理器 ===
+        class ImageLoader {
+            constructor() {
+                this.imageCache = new Map();
+                this.loadingQueue = new Set();
+                this.observer = null;
+                this.setupIntersectionObserver();
+            }
+
+            setupIntersectionObserver() {
+                if ('IntersectionObserver' in window) {
+                    this.observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                const gameId = parseInt(element.dataset.gameId);
+                                const imgElement = element.querySelector('img');
+                                if (gameId && imgElement && !imgElement.src) {
+                                    this.loadGameImage(gameId, imgElement);
+                                }
+                            }
+                        });
+                    }, {
+                        rootMargin: '100px'
+                    });
+                }
+            }
+
+            observeElement(element) {
+                if (this.observer && element) {
+                    this.observer.observe(element);
+                }
+            }
+
+            async loadGameImage(gameId, imgElement) {
+                if (!gameId || !imgElement || this.loadingQueue.has(gameId)) return;
+
+                if (this.imageCache.has(gameId)) {
+                    const cachedUrl = this.imageCache.get(gameId);
+                    if (cachedUrl) {
+                        this.setImageUrl(imgElement, cachedUrl);
+                    }
+                    return;
+                }
+
+                this.loadingQueue.add(gameId);
+
+                try {
+                    const response = await fetch(`/api/game-image/${gameId}`);
+                    const data = await response.json();
+
+                    if (data.image_url) {
+                        this.imageCache.set(gameId, data.image_url);
+                        this.setImageUrl(imgElement, data.image_url);
+                    } else {
+                        this.imageCache.set(gameId, null);
+                    }
+                } catch (error) {
+                    console.warn(`加载游戏 ${gameId} 图片失败:`, error);
+                    this.imageCache.set(gameId, null);
+                } finally {
+                    this.loadingQueue.delete(gameId);
+                }
+            }
+
+            setImageUrl(imgElement, imageUrl) {
+                if (imgElement && imageUrl) {
+                    const img = new Image();
+                    img.onload = () => {
+                        imgElement.src = imageUrl;
+                        imgElement.style.display = 'block';
+
+                        const placeholder = imgElement.parentElement.querySelector('.placeholder-icon');
+                        if (placeholder) {
+                            placeholder.style.display = 'none';
+                        }
+
+                        imgElement.style.opacity = '0';
+                        imgElement.style.transition = 'opacity 0.3s ease';
+                        setTimeout(() => {
+                            imgElement.style.opacity = '1';
+                        }, 50);
+                    };
+                    img.onerror = () => console.warn('图片加载失败:', imageUrl);
+                    img.src = imageUrl;
+                }
+            }
+        }
+
+        const imageLoader = new ImageLoader();
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 检查用户认证状态
+            checkUserAuth();
+
+            // 监听语言变化
+            if (window.langManager) {
+                window.langManager.addObserver((newLang) => {
+                    // 更新所有滑块显示
+                    updateAllSliderDisplays();
+
+                    // 如果当前在第一步，重新渲染游戏列表
+                    if (currentStep === 1) {
+                        const gamesContainer = document.getElementById('classic-games');
+                        if (gamesContainer && gamesContainer.children.length > 1) {
+                            // 收集当前游戏数据
+                            const games = [];
+                            gamesContainer.querySelectorAll('.game-card').forEach(card => {
+                                const gameId = parseInt(card.dataset.gameId);
+                                const gameName = card.dataset.game;
+                                const rating = parseFloat(card.querySelector('.game-rating').textContent.trim());
+                                const playersText = card.querySelector('.game-players').textContent;
+
+                                games.push({
+                                    id: gameId,
+                                    name: gameName,
+                                    rating: rating,
+                                    players_text: playersText
+                                });
+                            });
+
+                            if (games.length > 0) {
+                                renderClassicGames(games);
+
+                                // 恢复选中状态
+                                selectedGames.forEach(gameName => {
+                                    const card = document.querySelector(`[data-game="${gameName}"]`);
+                                    if (card) card.classList.add('selected');
+                                });
+                            }
+                        }
+                    }
+                });
+            }
+
+            loadClassicGames();
+            setupSliderHandlers();
+            setupEventListeners();
+            updateProgress();
+        });
+
+        // 加载经典游戏
+        async function loadClassicGames() {
+            try {
+                const response = await fetch('/api/classic-games');
+                const data = await response.json();
+
+                if (data.games && data.games.length > 0) {
+                    renderClassicGames(data.games);
+                } else {
+                    renderSampleGames();
+                }
+            } catch (error) {
+                console.error('加载经典游戏失败:', error);
+                renderSampleGames();
+            }
+        }
+
+        // 渲染经典游戏
+        function renderClassicGames(games) {
+            const container = document.getElementById('classic-games');
+            container.innerHTML = games.slice(0, 24).map(game => {
+                // 根据当前语言生成人数文本
+                const playersText = window.langManager && window.langManager.getCurrentLang() === 'en'
+                    ? game.players_text.replace('人', ' players')
+                    : game.players_text;
+
+                return `
+                    <div class="choice-card game-card" data-game="${game.name}" data-game-id="${game.id}" onclick="toggleGameSelection('${game.name.replace(/'/g, "\\'")}')">
+                        <div class="game-image-container">
+                            <img alt="${game.name}" />
+                            <div class="placeholder-icon">🎲</div>
+                        </div>
+                        <div class="game-title">${game.name}</div>
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i> ${game.rating.toFixed(2)}
+                        </div>
+                        <div class="game-players">${playersText}</div>
+                    </div>
+                `;
+            }).join('');
+
+            container.querySelectorAll('.game-card').forEach(card => {
+                imageLoader.observeElement(card);
+            });
+        }
+
+        // 渲染示例游戏
+        function renderSampleGames() {
+            const sampleGames = [
+                {id: 174430, name: 'Gloomhaven', rating: 8.79, players_text: '1-4人'},
+                {id: 30549, name: 'Pandemic', rating: 7.61, players_text: '2-4人'},
+                {id: 167791, name: 'Terraforming Mars', rating: 8.43, players_text: '1-5人'},
+                {id: 6249, name: '7 Wonders', rating: 7.75, players_text: '2-7人'},
+                {id: 224517, name: 'Azul', rating: 7.83, players_text: '2-4人'},
+                {id: 266192, name: 'Wingspan', rating: 8.11, players_text: '1-5人'},
+                {id: 169786, name: 'Scythe', rating: 8.24, players_text: '1-5人'},
+                {id: 120677, name: 'Terra Mystica', rating: 8.14, players_text: '2-5人'},
+                {id: 220308, name: 'Brass: Birmingham', rating: 8.66, players_text: '2-4人'},
+                {id: 182028, name: 'Through the Ages', rating: 8.48, players_text: '2-4人'},
+                {id: 316554, name: 'Everdell', rating: 8.22, players_text: '1-4人'},
+                {id: 161936, name: 'Pandemic Legacy S1', rating: 8.61, players_text: '2-4人'},
+                {id: 178900, name: 'Codenames', rating: 7.62, players_text: '2-8人'},
+                {id: 68448, name: 'Carcassonne', rating: 7.42, players_text: '2-5人'},
+                {id: 31260, name: 'Agricola', rating: 7.94, players_text: '1-5人'},
+                {id: 295770, name: 'Root', rating: 8.05, players_text: '2-4人'},
+                {id: 167355, name: 'Viticulture', rating: 8.11, players_text: '1-6人'},
+                {id: 295947, name: 'Dune: Imperium', rating: 8.35, players_text: '1-4人'},
+                {id: 102794, name: 'Power Grid', rating: 7.82, players_text: '2-6人'},
+                {id: 13, name: 'Settlers of Catan', rating: 7.13, players_text: '3-4人'},
+                {id: 521, name: 'Ticket to Ride', rating: 7.42, players_text: '2-5人'},
+                {id: 192135, name: 'Great Western Trail', rating: 8.27, players_text: '2-4人'},
+                {id: 36218, name: 'Dominion', rating: 7.59, players_text: '2-4人'},
+                {id: 170216, name: 'Splendor', rating: 7.41, players_text: '2-4人'}
+            ];
+            renderClassicGames(sampleGames);
+        }
+
+        // 游戏选择切换
+        function toggleGameSelection(gameName) {
+            const card = document.querySelector(`[data-game="${gameName}"]`);
+            if (!card) return;
+
+            if (selectedGames.includes(gameName)) {
+                selectedGames = selectedGames.filter(g => g !== gameName);
+                card.classList.remove('selected');
+            } else {
+                selectedGames.push(gameName);
+                card.classList.add('selected');
+            }
+        }
+
+        // 设置事件监听器
+        function setupEventListeners() {
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.choice-card[data-mechanic]')) {
+                    const card = e.target.closest('.choice-card');
+                    const mechanic = card.dataset.mechanic;
+
+                    if (selectedMechanics.includes(mechanic)) {
+                        selectedMechanics = selectedMechanics.filter(m => m !== mechanic);
+                        card.classList.remove('selected');
+                    } else {
+                        selectedMechanics.push(mechanic);
+                        card.classList.add('selected');
+                    }
+                }
+
+                if (e.target.closest('.choice-card[data-domain]')) {
+                    const card = e.target.closest('.choice-card');
+                    const domain = card.dataset.domain;
+
+                    if (selectedDomains.includes(domain)) {
+                        selectedDomains = selectedDomains.filter(d => d !== domain);
+                        card.classList.remove('selected');
+                    } else {
+                        selectedDomains.push(domain);
+                        card.classList.add('selected');
+                    }
+                }
+            });
+        }
+
+        // 设置滑块处理器
+        function setupSliderHandlers() {
+            const sliderGroups = ['players', 'time', 'age', 'complexity'];
+
+            sliderGroups.forEach(group => {
+                const options = document.querySelectorAll(`#${group}-options .slider-option`);
+                options.forEach(option => {
+                    option.addEventListener('click', function() {
+                        options.forEach(opt => opt.classList.remove('selected'));
+                        this.classList.add('selected');
+
+                        const value = this.dataset.value;
+                        gameSettings[group] = value;
+
+                        updateSliderDisplay(group, value);
+                    });
+                });
+            });
+        }
+
+        function updateSliderDisplay(group, value) {
+            const valueElement = document.getElementById(`${group}-value`);
+            if (!valueElement || !window.langManager) return;
+
+            const keys = {
+                'players': {
+                    '1': 'setting.players.solo',
+                    '2-4': 'setting.players.small',
+                    '5-8': 'setting.players.medium',
+                    '8+': 'setting.players.large'
+                },
+                'time': {
+                    '30': 'setting.time.quick',
+                    '90': 'setting.time.standard',
+                    '180': 'setting.time.deep',
+                    '240': 'setting.time.epic'
+                },
+                'age': {
+                    '6': 'setting.age.child',
+                    '10': 'setting.age.youth',
+                    '12': 'setting.age.teen',
+                    '14': 'setting.age.mature'
+                },
+                'complexity': {
+                    '1.5': 'setting.complexity.easy',
+                    '2.5': 'setting.complexity.medium',
+                    '3.5': 'setting.complexity.hard',
+                    '4.5': 'setting.complexity.expert'
+                }
+            };
+
+            const key = keys[group]?.[value];
+            if (key) {
+                valueElement.textContent = window.langManager.t(key);
+            }
+        }
+
+        function updateAllSliderDisplays() {
+            ['players', 'time', 'age', 'complexity'].forEach(group => {
+                updateSliderDisplay(group, gameSettings[group]);
+            });
+        }
+
+        // 步骤导航
+        function nextStep(step) {
+            if (step < 4) {
+                currentStep = step + 1;
+                showStep(currentStep);
+                updateProgress();
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function prevStep(step) {
+            if (step > 1) {
+                currentStep = step - 1;
+                showStep(currentStep);
+                updateProgress();
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function showStep(stepNumber) {
+            document.querySelectorAll('.step').forEach(step => {
+                step.classList.remove('active');
+            });
+
+            const currentStepElement = document.getElementById(`step${stepNumber}`);
+            if (currentStepElement) {
+                currentStepElement.classList.add('active');
+            }
+        }
+
+        function updateProgress() {
+            document.querySelectorAll('.step-dot').forEach((dot, index) => {
+                const stepNum = index + 1;
+                dot.classList.remove('active', 'completed');
+
+                if (stepNum < currentStep) {
+                    dot.classList.add('completed');
+                } else if (stepNum === currentStep) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        // 生成推荐
+        async function generateRecommendations() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.display = 'flex';
+            }
+
+            const preferences = {
+                selectedGames,
+                selectedMechanics,
+                selectedDomains,
+                gameSettings
+            };
+
+            console.log('用户偏好:', preferences);
+
+            try {
+                const response = await fetch('/api/recommendations', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(preferences)
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    alert('推荐生成失败: ' + data.error);
+                } else {
+                    window.location.href = '/recommendations';
+                }
+            } catch (error) {
+                console.error('推荐请求失败:', error);
+                alert('网络错误，请重试');
+            } finally {
+                if (loadingScreen) {
+                    loadingScreen.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
